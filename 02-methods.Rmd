@@ -1,0 +1,39 @@
+# Medidas de tendencia central
+
+Las medidas de tendencia central son medidas que permiten resumir un conjunto de datos a través de un único valor representativo. Dichas medidas ofrecen una idea general del comportamiento del conjunto de datos y permite identificar valores atípicos.
+
+<br>
+
+## Media aritmética
+
+La media aritmética, comúnmente conocida como el promedio, es una de las medidas de tendencia central más utilizadas en estadística y análisis de datos. Este indicador se calcula sumando todos los valores individuales de un conjunto de datos y dividiéndolos entre el número total de elementos del conjunto. 
+
+La media aritmética proporciona una representación numérica que refleja el valor promedio dentro de un grupo de datos. Sin embargo, es importante mencionar que el promedio puede ser influenciado por valores extremos o atípicos, conocidos como outliers, lo que puede distorsionar la interpretación de los resultados. 
+
+La fórmula para calcular la **media aritmética** es la siguiente:
+
+\[
+\bar{x} = \frac{\sum_{i=1}^{n}x_i}{n}
+\]
+
+En esta ecuación:  
+
+- \(\bar{x}\) es el *promedio*.  
+- \(\sum_{i=1}^{n}x_i\) indica la suma de todos los valores \(x_i\) presentes en el conjunto de datos.  
+
+- \(n\) es el número total de observaciones en el conjunto.
+
+Así, el cálculo de la media consiste en sumar todos los valores del conjunto de datos y dividir este total entre la cantidad de observaciones. 
+
+
+*Ejemplo*
+
+Supongamos que tenemos el siguiente conjunto de datos: \(8, 12, 10, 15, 12, 10, 18\). Para calcular el promedio, sumamos todos los valores del conjunto y dividimos el resultado entre 7, que es el número total de observaciones:
+
+\[
+\bar{x} = \frac{\sum_{i=1}^{7}x_i}{7}=\frac{8 + 12 + 10 + 15 + 12 + 10 + 18}{7} = \frac{85}{7} \approx 12.14
+\]
+
+Por lo tanto, la media aritmética del conjunto de datos es aproximadamente \(12.14\). Este valor nos indica el promedio o el punto de equilibrio de los datos analizados
+
+<br>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Medidas de tendencia central | Estadística</title>
+  <meta name="description" content="3 Medidas de tendencia central | Estadística" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Medidas de tendencia central | Estadística" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Medidas de tendencia central | Estadística" />
+  
+  
+  
+
+<meta name="author" content="Julio César" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introducción-a-r.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<p style="font-weight: bold; color: #0B3D62;">Contenido</p> 
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Paseo</a></li>
+<li class="chapter" data-level="2" data-path="introducción-a-r.html"><a href="introducción-a-r.html"><i class="fa fa-check"></i><b>2</b> Introducción a R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introducción-a-r.html"><a href="introducción-a-r.html#instalación"><i class="fa fa-check"></i><b>2.1</b> Instalación</a></li>
+<li class="chapter" data-level="2.2" data-path="introducción-a-r.html"><a href="introducción-a-r.html#lógica-de-r"><i class="fa fa-check"></i><b>2.2</b> Lógica de R</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html"><i class="fa fa-check"></i><b>3</b> Medidas de tendencia central</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#media-aritmética"><i class="fa fa-check"></i><b>3.1</b> Media aritmética</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Estadística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="medidas-de-tendencia-central" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Medidas de tendencia central<a href="medidas-de-tendencia-central.html#medidas-de-tendencia-central" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Las medidas de tendencia central son medidas que permiten resumir un conjunto de datos a través de un único valor representativo. Dichas medidas ofrecen una idea general del comportamiento del conjunto de datos y permite identificar valores atípicos.</p>
+<p><br></p>
+<div id="media-aritmética" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Media aritmética<a href="medidas-de-tendencia-central.html#media-aritmética" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La media aritmética, comúnmente conocida como el promedio, es una de las medidas de tendencia central más utilizadas en estadística y análisis de datos. Este indicador se calcula sumando todos los valores individuales de un conjunto de datos y dividiéndolos entre el número total de elementos del conjunto.</p>
+<p>La media aritmética proporciona una representación numérica que refleja el valor promedio dentro de un grupo de datos. Sin embargo, es importante mencionar que el promedio puede ser influenciado por valores extremos o atípicos, conocidos como outliers, lo que puede distorsionar la interpretación de los resultados.</p>
+<p>La fórmula para calcular la <strong>media aritmética</strong> es la siguiente:</p>
+<p><span class="math display">\[
+\bar{x} = \frac{\sum_{i=1}^{n}x_i}{n}
+\]</span></p>
+<p>En esta ecuación:</p>
+<ul>
+<li><p><span class="math inline">\(\bar{x}\)</span> es el <em>promedio</em>.<br />
+</p></li>
+<li><p><span class="math inline">\(\sum_{i=1}^{n}x_i\)</span> indica la suma de todos los valores <span class="math inline">\(x_i\)</span> presentes en el conjunto de datos.</p></li>
+<li><p><span class="math inline">\(n\)</span> es el número total de observaciones en el conjunto.</p></li>
+</ul>
+<p>Así, el cálculo de la media consiste en sumar todos los valores del conjunto de datos y dividir este total entre la cantidad de observaciones.</p>
+<p><em>Ejemplo</em></p>
+<p>Supongamos que tenemos el siguiente conjunto de datos: <span class="math inline">\(8, 12, 10, 15, 12, 10, 18\)</span>. Para calcular el promedio, sumamos todos los valores del conjunto y dividimos el resultado entre 7, que es el número total de observaciones:</p>
+<p><span class="math display">\[
+\bar{x} = \frac{\sum_{i=1}^{7}x_i}{7}=\frac{8 + 12 + 10 + 15 + 12 + 10 + 18}{7} = \frac{85}{7} \approx 12.14
+\]</span></p>
+<p>Por lo tanto, la media aritmética del conjunto de datos es aproximadamente <span class="math inline">\(12.14\)</span>. Este valor nos indica el promedio o el punto de equilibrio de los datos analizados</p>
+<p><br></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introducción-a-r.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"includes": {
+"in_header": "header.html"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

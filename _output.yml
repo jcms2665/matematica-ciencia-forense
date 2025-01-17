@@ -1,0 +1,9 @@
+bookdown::gitbook:
+  css: custom.css              
+  config:
+    includes:
+      in_header: header.html   
+    toc:
+      collapse: section        
+      before: |
+        <p style="font-weight: bold; color: #0B3D62;">Contenido</p> 
