@@ -1,4 +1,5 @@
 bookdown::gitbook:
+  output_dir: "docs"
   css: custom.css              
   config:
     includes:
