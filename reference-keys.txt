@@ -1,0 +1,6 @@
+paseo
+introducción-a-r
+instalación
+lógica-de-r
+medidas-de-tendencia-central
+media-aritmética

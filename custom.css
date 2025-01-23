@@ -1,0 +1,14 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #003D64; 
+}
+
+h1, h2, h3 {
+  color: #0B3D62; 
+}
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+}

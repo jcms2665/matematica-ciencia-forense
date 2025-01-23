@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Introducción a R | Estadística</title>
+  <meta name="description" content="2 Introducción a R | Estadística" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Introducción a R | Estadística" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Introducción a R | Estadística" />
+  
+  
+  
+
+<meta name="author" content="Julio César" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="medidas-de-tendencia-central.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<p style="font-weight: bold; color: #0B3D62;">Contenido</p> 
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Paseo</a></li>
+<li class="chapter" data-level="2" data-path="introducción-a-r.html"><a href="introducción-a-r.html"><i class="fa fa-check"></i><b>2</b> Introducción a R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introducción-a-r.html"><a href="introducción-a-r.html#instalación"><i class="fa fa-check"></i><b>2.1</b> Instalación</a></li>
+<li class="chapter" data-level="2.2" data-path="introducción-a-r.html"><a href="introducción-a-r.html#lógica-de-r"><i class="fa fa-check"></i><b>2.2</b> Lógica de R</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html"><i class="fa fa-check"></i><b>3</b> Medidas de tendencia central</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#media-aritmética"><i class="fa fa-check"></i><b>3.1</b> Media aritmética</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Estadística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introducción-a-r" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Introducción a R<a href="introducción-a-r.html#introducción-a-r" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>R es un lenguaje de programación diseñado para el análisis estadístico que goza de gran popularidad en el ámbito académico y comercial. Fue concebido como un software libre, lo que significa que su código puede ser manipulado y adaptado a las necesidades de los usuarios. Gracias a ello, su uso se ha extendido a otras áreas como la minería de texto, análisis espacial o el diseño de páginas web. Además, posee una gran versatilidad que le permite vincularse con otros programas como Python, Stata o Tableau.</p>
+<p>Se puede trabajar en R de forma directa, sin embargo, es altamente recomendable usarlo a través de un entorno integrado de desarrollo (IDE, por sus siglas en inglés). Se trata de una herramienta que facilita la escritura y ejecución de código, la opción más utilizada es <a href="https://rstudio.com/forrester/">RStudio</a>, pero existen otras opciones como <a href="https://medium.com/@ezzaouia/how-to-use-r-and-python-with-google-colaboratory-notebook-ebc4774d48a">Colaboratory</a> en donde se tiene acceso gratuito a GPU y es más fácil compartir el trabajo con otros usuarios.</p>
+<div id="instalación" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Instalación<a href="introducción-a-r.html#instalación" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El primer paso para instalar R es descargar el archivo ejecutable en la <a href="https://cran.itam.mx/">página oficial</a> de acuerdo con el sistema operativo de la máquina. Después se descarga <a href="https://rstudio.com/products/rstudio/download/">Rstudio</a> que es el entorno integrado de desarrollo. En la web existen diversos tutoriales que muestran paso a paso la instalación en <a href="https://www.youtube.com/watch?v=sXMiwC9magQ">MAC</a>, <a href="https://www.youtube.com/watch?v=rxsE3Uc_bnU">Windows</a> o <a href="https://www.youtube.com/watch?v=3ni-jP2qEWg">Linux</a>.</p>
+<p>Una vez finalizada la instalación, estamos listos para empezar a trabajar con R vía Rstudio.</p>
+<p><img src="www/g0.PNG" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="lógica-de-r" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Lógica de R<a href="introducción-a-r.html#lógica-de-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para utilizar R, el primer paso siempre será <strong>descargar los paquetes</strong> usando el comando <code>install.packages(" ")</code>, los cuales contienen funciones que permiten realizar tareas específicas. Estos paquetes pueden obtenerse desde un repositorio oficial, como <em>CRAN</em>, conocido por su confiabilidad y rigurosa revisión de los contenidos, o desde plataformas alternativas como <em>GitHub</em>, donde los desarrolladores comparten su código.</p>
+<p><img src="www/g1.PNG" width="30%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="medidas-de-tendencia-central.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"includes": {
+"in_header": "header.html"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
