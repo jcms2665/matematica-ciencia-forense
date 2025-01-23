@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 3 Jerarquía de operaciones | Matemática para Ciencia Forense</title>
+  <meta name="description" content="4 3 Jerarquía de operaciones | Matemática para Ciencia Forense" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 3 Jerarquía de operaciones | Matemática para Ciencia Forense" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 3 Jerarquía de operaciones | Matemática para Ciencia Forense" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="unidades-métricas.html"/>
+<link rel="next" href="vectores-y-plano-cartesiando.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<p style="font-weight: bold; color: #0B3D62;">Contenido</p>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="notación-científica.html"><a href="notación-científica.html"><i class="fa fa-check"></i><b>2</b> 1. Notación Científica</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="notación-científica.html"><a href="notación-científica.html#representación-numérica"><i class="fa fa-check"></i><b>2.1</b> 1.1 Representación numérica</a></li>
+<li class="chapter" data-level="2.2" data-path="notación-científica.html"><a href="notación-científica.html#operaciones-básicas"><i class="fa fa-check"></i><b>2.2</b> 1.2 Operaciones básicas</a></li>
+<li class="chapter" data-level="2.3" data-path="notación-científica.html"><a href="notación-científica.html#ejemplos"><i class="fa fa-check"></i><b>2.3</b> 1.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="unidades-métricas.html"><a href="unidades-métricas.html"><i class="fa fa-check"></i><b>3</b> 2 Unidades métricas</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="unidades-métricas.html"><a href="unidades-métricas.html#factores-de-conversión"><i class="fa fa-check"></i><b>3.1</b> 2.1. Factores de conversión</a></li>
+<li class="chapter" data-level="3.2" data-path="unidades-métricas.html"><a href="unidades-métricas.html#sistemas-métricos"><i class="fa fa-check"></i><b>3.2</b> 2.2 Sistemas métricos</a></li>
+<li class="chapter" data-level="3.3" data-path="unidades-métricas.html"><a href="unidades-métricas.html#ejemplos-1"><i class="fa fa-check"></i><b>3.3</b> 2.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html"><i class="fa fa-check"></i><b>4</b> 3 Jerarquía de operaciones</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#leyes-de-los-signos"><i class="fa fa-check"></i><b>4.1</b> 3.1 Leyes de los signos</a></li>
+<li class="chapter" data-level="4.2" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#propiedades-de-las-operaciones"><i class="fa fa-check"></i><b>4.2</b> 3.2 Propiedades de las operaciones</a></li>
+<li class="chapter" data-level="4.3" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#orden-de-operaciones"><i class="fa fa-check"></i><b>4.3</b> 3.3 Orden de operaciones</a></li>
+<li class="chapter" data-level="4.4" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#leyes-de-los-exponentes"><i class="fa fa-check"></i><b>4.4</b> 3.4 Leyes de los exponentes</a></li>
+<li class="chapter" data-level="4.5" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#ejemplos-2"><i class="fa fa-check"></i><b>4.5</b> 3.5 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html"><i class="fa fa-check"></i><b>5</b> 4. Vectores y plano cartesiando</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#componentes-de-un-vector"><i class="fa fa-check"></i><b>5.1</b> 4.1 Componentes de un vector</a></li>
+<li class="chapter" data-level="5.2" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#operaciones-básicas-1"><i class="fa fa-check"></i><b>5.2</b> 4.2 Operaciones básicas</a></li>
+<li class="chapter" data-level="5.3" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#coordenadas-polares"><i class="fa fa-check"></i><b>5.3</b> 4.3 Coordenadas polares</a></li>
+<li class="chapter" data-level="5.4" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#radianes-y-grados"><i class="fa fa-check"></i><b>5.4</b> 4.4 Radianes y grados</a></li>
+<li class="chapter" data-level="5.5" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#ángulos-y-el-teorema-de-pitágoras"><i class="fa fa-check"></i><b>5.5</b> 4.5 Ángulos y el Teorema de Pitágoras</a></li>
+<li class="chapter" data-level="5.6" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#ejemplos-3"><i class="fa fa-check"></i><b>5.6</b> 4.6 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html"><i class="fa fa-check"></i><b>6</b> 5 Logaritmos y exponentes</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#propiedades-de-los-logaritmos"><i class="fa fa-check"></i><b>6.1</b> 5.1 Propiedades de los logaritmos</a></li>
+<li class="chapter" data-level="6.2" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#relación-entre-logaritmos-y-potencias"><i class="fa fa-check"></i><b>6.2</b> 5.2 Relación entre logaritmos y potencias</a></li>
+<li class="chapter" data-level="6.3" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#ejemplos-4"><i class="fa fa-check"></i><b>6.3</b> 5.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="introducción-a-las-funciones.html"><a href="introducción-a-las-funciones.html"><i class="fa fa-check"></i><b>7</b> 6. Introducción a las funciones</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="introducción-a-las-funciones.html"><a href="introducción-a-las-funciones.html#componentes-básicos-de-una-función"><i class="fa fa-check"></i><b>7.1</b> 6.1 Componentes básicos de una función</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="gráficas-de-funciones.html"><a href="gráficas-de-funciones.html"><i class="fa fa-check"></i><b>8</b> 7. Gráficas de funciones</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="gráficas-de-funciones.html"><a href="gráficas-de-funciones.html#interpretación"><i class="fa fa-check"></i><b>8.1</b> 7.1. Interpretación</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="funciones-especiales.html"><a href="funciones-especiales.html"><i class="fa fa-check"></i><b>9</b> 8. Funciones especiales</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="funciones-especiales.html"><a href="funciones-especiales.html#funciones-trigonométricas"><i class="fa fa-check"></i><b>9.1</b> 8.2. Funciones trigonométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="funciones-inversas.html"><a href="funciones-inversas.html"><i class="fa fa-check"></i><b>10</b> 9. Funciones inversas</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="funciones-inversas.html"><a href="funciones-inversas.html#funciones-lineales"><i class="fa fa-check"></i><b>10.1</b> 9.1. Funciones lineales</a></li>
+<li class="chapter" data-level="10.2" data-path="funciones-inversas.html"><a href="funciones-inversas.html#exponentes-y-logaritmos"><i class="fa fa-check"></i><b>10.2</b> 9.2. Exponentes y logaritmos</a></li>
+<li class="chapter" data-level="10.3" data-path="funciones-inversas.html"><a href="funciones-inversas.html#ejemplos-5"><i class="fa fa-check"></i><b>10.3</b> 9.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="introducción-al-cálculo.html"><a href="introducción-al-cálculo.html"><i class="fa fa-check"></i><b>11</b> 10. Introducción al cálculo</a></li>
+<li class="chapter" data-level="12" data-path="derivadas.html"><a href="derivadas.html"><i class="fa fa-check"></i><b>12</b> 11. Derivadas</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="derivadas.html"><a href="derivadas.html#ejemplos-6"><i class="fa fa-check"></i><b>12.1</b> 11.1 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="integrales.html"><a href="integrales.html"><i class="fa fa-check"></i><b>13</b> 12. Integrales</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="integrales.html"><a href="integrales.html#ejemplos-7"><i class="fa fa-check"></i><b>13.1</b> 12.1 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html"><i class="fa fa-check"></i><b>14</b> 13. Ecuaciones de primer grado</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html#ejemplos-8"><i class="fa fa-check"></i><b>14.1</b> 13.1 Ejemplos</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Matemática para Ciencia Forense</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="jerarquía-de-operaciones" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> 3 Jerarquía de operaciones<a href="jerarquía-de-operaciones.html#jerarquía-de-operaciones" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><br></p>
+<p>Este capítulo trata sobre cómo resolver operaciones que involucran exponentes y el orden en que resolvemos operaciones. Para ello, vamos a explorar las leyes fundamentales de los exponentes, que permiten simplificar cálculos de manera eficiente, y las reglas de jerarquía de operaciones, esenciales para obtener resultados correctos en expresiones matemáticas complejas.</p>
+<p><br></p>
+<div id="leyes-de-los-signos" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> 3.1 Leyes de los signos<a href="jerarquía-de-operaciones.html#leyes-de-los-signos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>En matemáticas, los números pueden ser positivos o negativos. Los números positivos se representan tal cual, mientras que los negativos llevan un signo menos <span class="math inline">\((-)\)</span> delante. Al momento de que dos números interactúan, los signos juegan un papel fundamental porque determinan el resultado de las operaciones aritméticas. En este contexto, las leyes de los signos son reglas que nos permiten realizar cálculos precisos, independientemente de si los números involucrados son positivos o negativos.</p>
+<p><br></p>
+<div style="display: flex; justify-content: center; align-items: center;">
+<table border="1" style="border-collapse: collapse; width: 85%; font-family: &#39;Times New Roman&#39;; font-size: 12pt; border-color: #EAEDEF;">
+<tr style="background-color: #7F9297;">
+<th rowspan="2" style="text-align: center; color: #0B3D62; font-weight: bold;">
+Operación
+</th>
+<th colspan="3" style="text-align: center; color: #0B3D62; font-weight: bold;">
+Signo
+</th>
+<th rowspan="2" style="text-align: center; color: #0B3D62; font-weight: bold;">
+Ejemplo
+</th>
+</tr>
+<tr style="background-color: #7F9297;">
+<td style="text-align: center; color: #0B3D62; font-weight: bold;">
+1er dígito
+</td>
+<td style="text-align: center; color: #0B3D62; font-weight: bold;">
+2do dígito
+</td>
+<td style="text-align: center; color: #0B3D62; font-weight: bold;">
+Resultado
+</td>
+</tr>
+<tr>
+<td rowspan="3" style="text-align: center; color: #0B3D62;">
+Multiplicación
+</td>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
+5 × 5 = 25
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
+-
+</td>
+<td style="text-align: center; color: #0B3D62;">
+-
+</td>
+<td style="text-align: center; color: #0B3D62;">
+5 × (-5) = -25
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+-
+</td>
+<td style="text-align: center; color: #0B3D62;">
+-
+</td>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
+(-5) × (-5) = 25
+</td>
+</tr>
+<tr>
+<td rowspan="3" style="text-align: center; color: #0B3D62;">
+División
+</td>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
+5 ÷ 5 = 1
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
+-
+</td>
+<td style="text-align: center; color: #0B3D62;">
+-
+</td>
+<td style="text-align: center; color: #0B3D62;">
+5 ÷ (-5) = -1
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+-
+</td>
+<td style="text-align: center; color: #0B3D62;">
+-
+</td>
+<td style="text-align: center; color: #0B3D62;">
++
+</td>
+<td style="text-align: center; color: #0B3D62;">
+(-5) ÷ (-5) = 1
+</td>
+</tr>
+</table>
+</div>
+<p><br></p>
+<p>Estas reglas ayudan a entender cómo se combinan los números con diferentes signos, facilitando el cálculo en situaciones cotidianas o matemáticas más avanzadas.</p>
+<p><br></p>
+</div>
+<div id="propiedades-de-las-operaciones" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> 3.2 Propiedades de las operaciones<a href="jerarquía-de-operaciones.html#propiedades-de-las-operaciones" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Las operaciones matemáticas básicas como la suma y la multiplicación poseen características particulares que permiten resolver problemas matemáticos complejos. A continuación, se presenta un desglose detallado de estas propiedades para cada operación.</p>
+<p><br></p>
+<div style="display: flex; justify-content: center; align-items: center;">
+<table border="1" style="border-collapse: collapse; width: 100%; font-family: &#39;Times New Roman&#39;; font-size: 11pt; border-color: #EAEDEF;">
+<tr style="background-color: #7F9297;">
+<th style="text-align: center; color: #0B3D62; font-weight: bold;">
+Propiedad
+</th>
+<th style="text-align: center; color: #0B3D62; font-weight: bold;">
+Suma
+</th>
+<th style="text-align: center; color: #0B3D62; font-weight: bold;">
+Multiplicación
+</th>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Conmutativa
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(a + b = b + a\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(a \times b = b \times a\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Asociativa
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\((a + b) + c = a + (b + c)\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\((a \times b) \times c = a \times (b \times c)\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Elemento neutro
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(a + 0 = a\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(a \times 1 = a\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Elemento opuesto e inverso
+</td>
+<td style="text-align: center; color: #0B3D62;">
+Negativo
+</td>
+<td style="text-align: center; color: #0B3D62;">
+División
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Distributiva
+</td>
+<td style="text-align: center; color: #0B3D62;" colspan="2">
+<span class="math inline">\(a \times (b + c) = (a \times b) + (a \times c)\)</span>
+</td>
+</tr>
+</table>
+</div>
+<p><br></p>
+<p>Todas las propiedades son importantes, pero la distributiva es una de las más utilizadas porque permite ejecutar un problema con mayor facilidad.</p>
+<p><br></p>
+</div>
+<div id="orden-de-operaciones" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> 3.3 Orden de operaciones<a href="jerarquía-de-operaciones.html#orden-de-operaciones" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Cuando trabajamos con expresiones matemáticas que incluyen operaciones como la suma, exponentes o paréntesis, es crucial seguir un orden específico para obtener el resultado correcto. Si no respetamos este orden, podemos terminar con resultados inconsistentes. Esto implica que debemos <strong>priorizar</strong> ciertas operaciones sobre otras, por lo que el orden correcto de ejecución es:</p>
+<p><span class="math display">\[\text{Paréntesis } \rightarrow \text{ Exponentes y raíces} \rightarrow \text{ Multiplicación y división} \rightarrow \text{ Suma y resta}\]</span></p>
+<p>Esto implica que siempre debemos resolver primero las operaciones contenidas dentro de los paréntesis y corchetes. En situaciones donde existan múltiples niveles, como paréntesis dentro de corchetes, se comienza por el nivel más interno. Una vez resuelto lo que está dentro de paréntesis y corchetes, se continúa con los exponentes y las raíces. Luego, se realizan las multiplicaciones y divisiones, para finalmente ejectuar las sumas y restas.</p>
+<p>Por ejemplo, vamos a resolver paso a paso la siguiente expresión:</p>
+<p><span class="math display">\[4[3^2 + 2(5+3)]\]</span></p>
+<p>Primero calculamos lo que está dentro de los paréntesis, <span class="math inline">\(5+3\)</span>, que da un total de <span class="math inline">\(8\)</span>. Después sustituimos el resultado en la expresión original y multiplicamos por <span class="math inline">\(2\)</span> (que está fuera del paréntesis): <span class="math inline">\(2 \times 8 = 16\)</span>. Luego calculamos <span class="math inline">\(3^2\)</span>, que es igual a <span class="math inline">\(9\)</span>, y sumamos los resultados de los cálculos que están dentro de los corchetes: <span class="math inline">\(9 + 16 = 25\)</span>. Finalmente, multiplicamos este resultado por <span class="math inline">\(4\)</span>, que está fuera del corchete y obtenemos: <span class="math inline">\(4 \times 25 = 100\)</span>. Por lo tanto, el resultado final de la expresión <span class="math inline">\(4[3^2 + 2(5+3)]\)</span> es <span class="math inline">\(100\)</span>.</p>
+<p><br></p>
+</div>
+<div id="leyes-de-los-exponentes" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> 3.4 Leyes de los exponentes<a href="jerarquía-de-operaciones.html#leyes-de-los-exponentes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Las leyes de los exponentes son reglas que nos ayudan a manejar operaciones donde los números se elevan a potencias. Son especialmente útiles en álgebra para simplificar expresiones y resolver ecuaciones.</p>
+<div style="display: flex; justify-content: center; align-items: center;">
+<table border="1" style="border-collapse: collapse; width: 100%; font-family: &#39;Times New Roman&#39;; font-size: 11pt; border-color: #EAEDEF;">
+<tr style="background-color: #7F9297;">
+<th style="text-align: center; color: #0B3D62; font-weight: bold;">
+Operación
+</th>
+<th style="text-align: center; color: #0B3D62; font-weight: bold;">
+Fórmula
+</th>
+<th style="text-align: center; color: #0B3D62; font-weight: bold;">
+Ejemplo
+</th>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Producto de potencias (misma base)
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(x^m \times x^n = x^{m+n}\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(3^3 \times 3^2 = 3^{3+2} = 3^5 = 243\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Cociente de potencias (misma base)
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(\frac{x^m}{x^n} = x^{m-n}\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(\frac{3^7}{3^2} = 3^{7-2} = 3^5 = 243\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Potencia de una potencia
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\((x^m)^n = x^{m \times n}\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\((2^2)^3 = 2^{2 \times 3} = 2^6 = 64\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Potencia de un producto
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\((xy)^n = x^n \times y^n\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\((2 \cdot 3)^3 = 2^3 \times 3^3 = 8 \times 27 = 216\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Potencia de un cociente
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(\left(\frac{x}{y}\right)^n = \frac{x^n}{y^n}\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(\left(\frac{2}{3}\right)^2 = \frac{2^2}{3^2} = \frac{4}{9}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Potencia de cero
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(x^0 = 1\)</span> (si <span class="math inline">\(x \neq 0\)</span>)
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(5^0 = 1\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; color: #0B3D62;">
+Potencia negativa
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(x^{-n} = \frac{1}{x^n}\)</span>
+</td>
+<td style="text-align: center; color: #0B3D62;">
+<span class="math inline">\(3^{-3} = \frac{1}{3^3} = \frac{1}{27}\)</span>
+</td>
+</tr>
+</table>
+</div>
+<p><br></p>
+<p><br></p>
+</div>
+<div id="ejemplos-2" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> 3.5 Ejemplos<a href="jerarquía-de-operaciones.html#ejemplos-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Vamos a resolver paso a paso las siguientes operaciones:</p>
+<p><br></p>
+<p><em>Ejemplo 1</em></p>
+<p><span class="math display">\[\frac{2(9^2 - 3^3)}{6}\]</span></p>
+<p>Iniciamos calculando las potencias: <span class="math inline">\(9^2\)</span> que es igual a 81 y <span class="math inline">\(3^3\)</span> que es 27. Restamos estos valores dentro del paréntesis: <span class="math inline">\(81 - 27 = 54\)</span>. A continuación, multiplicamos el resultado por 2, obteniendo <span class="math inline">\(2 \times 54 = 108\)</span>.</p>
+<p>Por último, dividimos este producto por 6, simplificando así a <span class="math inline">\(\frac{108}{6} = 18\)</span>.</p>
+<hr />
+<p><em>Ejemplo 2</em></p>
+<p><span class="math display">\[\frac{4[(5^3 + 3) - 5 \times 4]}{8}\]</span></p>
+<p>Comenzamos elevando 5 al cubo, resultando en <span class="math inline">\(5^3 = 125\)</span>. Sumamos 3 a este valor: <span class="math inline">\(125 + 3 = 128\)</span>. En paralelo, calculamos <span class="math inline">\(5 \times 4 = 20\)</span> y lo restamos del resultado anterior, obtenido dentro de los corchetes: <span class="math inline">\(128 - 20 = 108\)</span>. Este resultado se multiplica por 4, dando <span class="math inline">\(4 \times 108 = 432\)</span>.</p>
+<p>Finalmente, dividimos 432 por 8 para obtener el resultado final que es 54.</p>
+<hr />
+<p><em>Ejemplo 3</em></p>
+<p><span class="math display">\[\frac{6[2(7^2) - 3(4^2 + 2)]}{((6-2) \times 2)}\]</span></p>
+<p>Comenzamos trabajando en el numerador. Primero, calculamos las potencias: <span class="math inline">\(7^2\)</span> resulta en 49, y <span class="math inline">\(4^2\)</span> es 16. A continuación, sumamos 2 al resultado de <span class="math inline">\(4^2\)</span>, obteniendo <span class="math inline">\(16 + 2 = 18\)</span>. Multiplicamos este último resultado por 3, <span class="math inline">\(3 \times 18 = 54\)</span>, y lo sustraemos de <span class="math inline">\(2 \times 49 = 98\)</span>, resultando en <span class="math inline">\(98 - 54 = 44\)</span>. Multiplicamos entonces este resultado por 6, <span class="math inline">\(6 \times 44 = 264\)</span>.</p>
+<p>Ahora, nos ocupamos del denominador. Primero calculamos la resta dentro del paréntesis más interno: <span class="math inline">\(6-2 = 4\)</span>. Luego, multiplicamos este resultado por 2, <span class="math inline">\((4) \times 2 = 8\)</span>.</p>
+<p>Finalmente, dividimos el total del numerador, 264, por el resultado del denominador, 8, lo que simplifica a <span class="math inline">\(\frac{264}{8} = 33\)</span>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="unidades-métricas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="vectores-y-plano-cartesiando.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"includes": {
+"in_header": "header.html"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

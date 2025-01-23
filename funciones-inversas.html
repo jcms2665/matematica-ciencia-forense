@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Matemática para Ciencia Forense</title>
-  <meta name="description" content="Page not found | Matemática para Ciencia Forense" />
+  <title>10 9. Funciones inversas | Matemática para Ciencia Forense</title>
+  <meta name="description" content="10 9. Funciones inversas | Matemática para Ciencia Forense" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Matemática para Ciencia Forense" />
+  <meta property="og:title" content="10 9. Funciones inversas | Matemática para Ciencia Forense" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Matemática para Ciencia Forense" />
+  <meta name="twitter:title" content="10 9. Funciones inversas | Matemática para Ciencia Forense" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="funciones-especiales.html"/>
+<link rel="next" href="introducción-al-cálculo.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -159,19 +159,63 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="funciones-inversas" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">10</span> 9. Funciones inversas<a href="funciones-inversas.html#funciones-inversas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><br></p>
+<p>Las funciones inversas sirven para revertir el efecto de una función, permitiéndonos calcular el valor original de entrada (<span class="math inline">\(x\)</span>) a partir de un valor de salida (<span class="math inline">\(y\)</span>). Por ejemplo, si una función <span class="math inline">\(f(x)\)</span> convierte <span class="math inline">\(x = 2\)</span> en <span class="math inline">\(y = 5\)</span>, la función inversa <span class="math inline">\(f^{-1}(x)\)</span> tomará <span class="math inline">\(y = 5\)</span> y devolverá <span class="math inline">\(x = 2\)</span>. Esto es como un “camino de regreso” para la operación de la función original.</p>
+<p>Para que una función tenga una inversa, debe ser <strong>biyectiva</strong>, lo que significa que es inyectiva (cada valor de salida corresponde a un único valor de entrada) y sobreyectiva (todos los valores posibles de salida están cubiertos). Sin estas propiedades, no sería posible garantizar que cada valor de salida se asocie de forma única con un valor de entrada.</p>
+<p>La inversa de una función <span class="math inline">\(f(x)\)</span> se denota como <span class="math inline">\(f^{-1}(x)\)</span>. Al componer una función con su inversa, obtenemos el valor original, es decir, <span class="math inline">\(f(f^{-1}(x)) = x\)</span> y <span class="math inline">\(f^{-1}(f(x)) = x\)</span>. Esto refleja que las funciones inversas permiten deshacer el proceso realizado por la función original, asegurando que regresamos al punto de partida.</p>
+<p><br></p>
+<div id="funciones-lineales" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> 9.1. Funciones lineales<a href="funciones-inversas.html#funciones-lineales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Las funciones lineales son aquellas en las que la relación entre las variables de entrada y salida es directa y proporcional. Estas funciones tienen una forma general sencilla: <span class="math inline">\(f(x) = mx + b\)</span>, donde <span class="math inline">\(m\)</span> representa la pendiente, es decir, la inclinación de la recta, y <span class="math inline">\(b\)</span> es el punto donde la recta cruza el eje <span class="math inline">\(y\)</span>. Su representación gráfica es siempre una línea recta.</p>
+<p>Las funciones inversas de las lineales permiten revertir esta relación. Para calcular la inversa, reorganizamos la ecuación para despejar <span class="math inline">\(x\)</span> en términos de <span class="math inline">\(y\)</span>. Por ejemplo, si la función es <span class="math inline">\(f(x) = 2x + 3\)</span>, su inversa será <span class="math inline">\(f^{-1}(x) = \frac{x - 3}{2}\)</span>. Esto significa que a partir de un valor de salida <span class="math inline">\(y\)</span>, podemos encontrar el valor de entrada original <span class="math inline">\(x\)</span>.</p>
+<p>Gráficamente, si consideramos la función <span class="math inline">\(f(x) = 2x + 3\)</span> y su inversa <span class="math inline">\(f^{-1}(x) = \frac{x - 3}{2}\)</span>, observamos que ambas son simétricas respecto a la línea diagonal de 45 grados, <span class="math inline">\(y = x\)</span>. Esto implica que cada punto de la función original <span class="math inline">\((x, y)\)</span> se refleja en la inversa como <span class="math inline">\((y, x)\)</span>. Por ejemplo, para la función <span class="math inline">\(f(x)\)</span>, si <span class="math inline">\(x = 1\)</span>, entonces <span class="math inline">\(f(1) = 5\)</span>, lo que genera el punto <span class="math inline">\((1, 5)\)</span>. En la inversa <span class="math inline">\(f^{-1}(x)\)</span>, si <span class="math inline">\(x = 5\)</span>, obtenemos <span class="math inline">\(f^{-1}(5) = 1\)</span>, lo que corresponde al punto <span class="math inline">\((5, 1)\)</span>.</p>
+<p><img src="www/f_6.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>En la práctica, estas funciones inversas son útiles para resolver diversos problemas. Por ejemplo, pueden aplicarse para calcular el tiempo necesario para recorrer una distancia conocida, suponiendo que se viaja a una velocidad constante, o para determinar un valor inicial a partir de un resultado observado, como en situaciones financieras o experimentales.</p>
+<p><br></p>
+</div>
+<div id="exponentes-y-logaritmos" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> 9.2. Exponentes y logaritmos<a href="funciones-inversas.html#exponentes-y-logaritmos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Las funciones exponenciales y logarítmicas están profundamente relacionadas, ya que son inversas entre sí. Esto significa que si una función exponencial tiene la forma <span class="math inline">\(f(x) = a^x\)</span>, su inversa será <span class="math inline">\(f^{-1}(x) = \log_a(x)\)</span>, donde <span class="math inline">\(\log_a(x)\)</span> denota el logaritmo de base <span class="math inline">\(a\)</span>. En términos prácticos, aplicar una función exponencial y luego su inversa nos devuelve al valor original. Estas funciones son fundamentales en disciplinas como la física, la química y la economía debido a su capacidad para modelar fenómenos de crecimiento y descomposición.</p>
+<p>En la práctica, los logaritmos simplifican cálculos que de otro modo serían complejos. Por ejemplo, en procesos de desintegración radiactiva, los logaritmos se utilizan para determinar cuánto tiempo se necesita para que una sustancia alcance una concentración específica. También son esenciales en química para medir el pH, que se calcula como el logaritmo negativo de la concentración de iones de hidrógeno en una solución. Si una solución tiene una concentración de <span class="math inline">\(10^{-7}\)</span> moles de iones de hidrógeno por litro, su pH es <span class="math inline">\(7\)</span>, lo que refleja el uso directo de la función logarítmica de base 10.</p>
+<p>Gracias a su versatilidad, estas funciones permiten modelar fenómenos naturales, resolver ecuaciones exponenciales y logarítmicas, y abordar problemas en una amplia gama de áreas científicas y técnicas.</p>
+<p><br></p>
+</div>
+<div id="ejemplos-5" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> 9.3 Ejemplos<a href="funciones-inversas.html#ejemplos-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p><em>Ejemplo 1</em></p>
+<p>Encuentra la función inversa de:<br />
+<span class="math inline">\(f(x) = 3x - 7\)</span></p>
+<p>Para encontrar la función inversa de <span class="math inline">\(f(x) = 3x - 7\)</span>, seguimos un procedimiento paso a paso. Primero, reescribimos la función reemplazando <span class="math inline">\(f(x)\)</span> por <span class="math inline">\(y\)</span>, lo que nos da <span class="math inline">\(y = 3x - 7\)</span>. Esto facilita trabajar con la ecuación de forma más clara.</p>
+<p>El siguiente paso es despejar <span class="math inline">\(x\)</span> en términos de <span class="math inline">\(y\)</span>. Sumamos <span class="math inline">\(7\)</span> a ambos lados de la ecuación, obteniendo <span class="math inline">\(y + 7 = 3x\)</span>. Luego, dividimos ambos lados entre <span class="math inline">\(3\)</span> para aislar <span class="math inline">\(x\)</span>, lo que resulta en <span class="math inline">\(x = \frac{y + 7}{3}\)</span>.</p>
+<p>Finalmente, sustituimos <span class="math inline">\(y\)</span> por <span class="math inline">\(f^{-1}(x)\)</span> para expresar la inversa en términos de <span class="math inline">\(x\)</span>. Esto nos da la ecuación <span class="math inline">\(f^{-1}(x) = \frac{x + 7}{3}\)</span>, que representa la función inversa de <span class="math inline">\(f(x)\)</span>.</p>
+<p>Por lo tanto, el resultado final es <span class="math inline">\(f^{-1}(x) = \frac{x + 7}{3}\)</span>.</p>
+<hr />
+<p><em>Ejemplo 2</em></p>
+<p><span class="math inline">\(f(x) = \ln(x - 2)\)</span></p>
+<p>Para encontrar la función inversa de <span class="math inline">\(f(x) = \ln(x - 2)\)</span>, seguimos un procedimiento claro y organizado. Primero, reescribimos la función utilizando <span class="math inline">\(y\)</span> en lugar de <span class="math inline">\(f(x)\)</span>, obteniendo <span class="math inline">\(y = \ln(x - 2)\)</span>. Este paso nos ayuda a trabajar directamente con la ecuación.</p>
+<p>A continuación, aplicamos la función exponencial a ambos lados para eliminar el logaritmo natural. Esto nos lleva a <span class="math inline">\(e^y = x - 2\)</span>, lo que simplifica la relación entre <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Luego, despejamos <span class="math inline">\(x\)</span> sumando <span class="math inline">\(2\)</span> a ambos lados de la ecuación, resultando en <span class="math inline">\(x = e^y + 2\)</span>.</p>
+<p>Así, al sustituir <span class="math inline">\(y\)</span> por <span class="math inline">\(f^{-1}(x)\)</span>, obtenemos la función inversa en términos de <span class="math inline">\(x\)</span>. Esto da como resultado <span class="math inline">\(f^{-1}(x) = e^x + 2\)</span>, que representa la inversa de la función original.</p>
+<hr />
+<p><em>Ejemplo 3</em></p>
+<p><span class="math inline">\(f(x) = \frac{x + 1}{2x - 3}\)</span></p>
+<p>Para determinar la función inversa de <span class="math inline">\(f(x) = \frac{x + 1}{2x - 3}\)</span>, seguimos un procedimiento metódico. En primer lugar, reemplazamos <span class="math inline">\(f(x)\)</span> por <span class="math inline">\(y\)</span>, de modo que la ecuación queda como <span class="math inline">\(y = \frac{x + 1}{2x - 3}\)</span>. Este cambio facilita trabajar directamente con <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>.</p>
+<p>Seguidamente, eliminamos el denominador multiplicando ambos lados por <span class="math inline">\(2x - 3\)</span>, lo que nos lleva a <span class="math inline">\(y(2x - 3) = x + 1\)</span>. Luego expandimos y reordenamos para agrupar los términos que contienen <span class="math inline">\(x\)</span> en un lado de la ecuación, obteniendo <span class="math inline">\(2xy - x = 3y + 1\)</span>. Factorizamos <span class="math inline">\(x\)</span> en el lado izquierdo, resultando en <span class="math inline">\(x(2y - 1) = 3y + 1\)</span>. Finalmente, despejamos <span class="math inline">\(x\)</span>, quedando <span class="math inline">\(x = \frac{3y + 1}{2y - 1}\)</span>.</p>
+<p>Al sustituir <span class="math inline">\(y\)</span> por <span class="math inline">\(f^{-1}(x)\)</span>, obtenemos la forma de la función inversa. Esto nos lleva a <span class="math inline">\(f^{-1}(x) = \frac{3x + 1}{2x - 1}\)</span>, que representa la inversa de la función dada.</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="funciones-especiales.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introducción-al-cálculo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

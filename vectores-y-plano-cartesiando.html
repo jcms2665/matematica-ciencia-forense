@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 4. Vectores y plano cartesiando | Matemática para Ciencia Forense</title>
+  <meta name="description" content="5 4. Vectores y plano cartesiando | Matemática para Ciencia Forense" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 4. Vectores y plano cartesiando | Matemática para Ciencia Forense" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 4. Vectores y plano cartesiando | Matemática para Ciencia Forense" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="jerarquía-de-operaciones.html"/>
+<link rel="next" href="logaritmos-y-exponentes.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<p style="font-weight: bold; color: #0B3D62;">Contenido</p>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="notación-científica.html"><a href="notación-científica.html"><i class="fa fa-check"></i><b>2</b> 1. Notación Científica</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="notación-científica.html"><a href="notación-científica.html#representación-numérica"><i class="fa fa-check"></i><b>2.1</b> 1.1 Representación numérica</a></li>
+<li class="chapter" data-level="2.2" data-path="notación-científica.html"><a href="notación-científica.html#operaciones-básicas"><i class="fa fa-check"></i><b>2.2</b> 1.2 Operaciones básicas</a></li>
+<li class="chapter" data-level="2.3" data-path="notación-científica.html"><a href="notación-científica.html#ejemplos"><i class="fa fa-check"></i><b>2.3</b> 1.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="unidades-métricas.html"><a href="unidades-métricas.html"><i class="fa fa-check"></i><b>3</b> 2 Unidades métricas</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="unidades-métricas.html"><a href="unidades-métricas.html#factores-de-conversión"><i class="fa fa-check"></i><b>3.1</b> 2.1. Factores de conversión</a></li>
+<li class="chapter" data-level="3.2" data-path="unidades-métricas.html"><a href="unidades-métricas.html#sistemas-métricos"><i class="fa fa-check"></i><b>3.2</b> 2.2 Sistemas métricos</a></li>
+<li class="chapter" data-level="3.3" data-path="unidades-métricas.html"><a href="unidades-métricas.html#ejemplos-1"><i class="fa fa-check"></i><b>3.3</b> 2.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html"><i class="fa fa-check"></i><b>4</b> 3 Jerarquía de operaciones</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#leyes-de-los-signos"><i class="fa fa-check"></i><b>4.1</b> 3.1 Leyes de los signos</a></li>
+<li class="chapter" data-level="4.2" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#propiedades-de-las-operaciones"><i class="fa fa-check"></i><b>4.2</b> 3.2 Propiedades de las operaciones</a></li>
+<li class="chapter" data-level="4.3" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#orden-de-operaciones"><i class="fa fa-check"></i><b>4.3</b> 3.3 Orden de operaciones</a></li>
+<li class="chapter" data-level="4.4" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#leyes-de-los-exponentes"><i class="fa fa-check"></i><b>4.4</b> 3.4 Leyes de los exponentes</a></li>
+<li class="chapter" data-level="4.5" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#ejemplos-2"><i class="fa fa-check"></i><b>4.5</b> 3.5 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html"><i class="fa fa-check"></i><b>5</b> 4. Vectores y plano cartesiando</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#componentes-de-un-vector"><i class="fa fa-check"></i><b>5.1</b> 4.1 Componentes de un vector</a></li>
+<li class="chapter" data-level="5.2" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#operaciones-básicas-1"><i class="fa fa-check"></i><b>5.2</b> 4.2 Operaciones básicas</a></li>
+<li class="chapter" data-level="5.3" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#coordenadas-polares"><i class="fa fa-check"></i><b>5.3</b> 4.3 Coordenadas polares</a></li>
+<li class="chapter" data-level="5.4" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#radianes-y-grados"><i class="fa fa-check"></i><b>5.4</b> 4.4 Radianes y grados</a></li>
+<li class="chapter" data-level="5.5" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#ángulos-y-el-teorema-de-pitágoras"><i class="fa fa-check"></i><b>5.5</b> 4.5 Ángulos y el Teorema de Pitágoras</a></li>
+<li class="chapter" data-level="5.6" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#ejemplos-3"><i class="fa fa-check"></i><b>5.6</b> 4.6 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html"><i class="fa fa-check"></i><b>6</b> 5 Logaritmos y exponentes</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#propiedades-de-los-logaritmos"><i class="fa fa-check"></i><b>6.1</b> 5.1 Propiedades de los logaritmos</a></li>
+<li class="chapter" data-level="6.2" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#relación-entre-logaritmos-y-potencias"><i class="fa fa-check"></i><b>6.2</b> 5.2 Relación entre logaritmos y potencias</a></li>
+<li class="chapter" data-level="6.3" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#ejemplos-4"><i class="fa fa-check"></i><b>6.3</b> 5.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="introducción-a-las-funciones.html"><a href="introducción-a-las-funciones.html"><i class="fa fa-check"></i><b>7</b> 6. Introducción a las funciones</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="introducción-a-las-funciones.html"><a href="introducción-a-las-funciones.html#componentes-básicos-de-una-función"><i class="fa fa-check"></i><b>7.1</b> 6.1 Componentes básicos de una función</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="gráficas-de-funciones.html"><a href="gráficas-de-funciones.html"><i class="fa fa-check"></i><b>8</b> 7. Gráficas de funciones</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="gráficas-de-funciones.html"><a href="gráficas-de-funciones.html#interpretación"><i class="fa fa-check"></i><b>8.1</b> 7.1. Interpretación</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="funciones-especiales.html"><a href="funciones-especiales.html"><i class="fa fa-check"></i><b>9</b> 8. Funciones especiales</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="funciones-especiales.html"><a href="funciones-especiales.html#funciones-trigonométricas"><i class="fa fa-check"></i><b>9.1</b> 8.2. Funciones trigonométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="funciones-inversas.html"><a href="funciones-inversas.html"><i class="fa fa-check"></i><b>10</b> 9. Funciones inversas</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="funciones-inversas.html"><a href="funciones-inversas.html#funciones-lineales"><i class="fa fa-check"></i><b>10.1</b> 9.1. Funciones lineales</a></li>
+<li class="chapter" data-level="10.2" data-path="funciones-inversas.html"><a href="funciones-inversas.html#exponentes-y-logaritmos"><i class="fa fa-check"></i><b>10.2</b> 9.2. Exponentes y logaritmos</a></li>
+<li class="chapter" data-level="10.3" data-path="funciones-inversas.html"><a href="funciones-inversas.html#ejemplos-5"><i class="fa fa-check"></i><b>10.3</b> 9.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="introducción-al-cálculo.html"><a href="introducción-al-cálculo.html"><i class="fa fa-check"></i><b>11</b> 10. Introducción al cálculo</a></li>
+<li class="chapter" data-level="12" data-path="derivadas.html"><a href="derivadas.html"><i class="fa fa-check"></i><b>12</b> 11. Derivadas</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="derivadas.html"><a href="derivadas.html#ejemplos-6"><i class="fa fa-check"></i><b>12.1</b> 11.1 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="integrales.html"><a href="integrales.html"><i class="fa fa-check"></i><b>13</b> 12. Integrales</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="integrales.html"><a href="integrales.html#ejemplos-7"><i class="fa fa-check"></i><b>13.1</b> 12.1 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html"><i class="fa fa-check"></i><b>14</b> 13. Ecuaciones de primer grado</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html#ejemplos-8"><i class="fa fa-check"></i><b>14.1</b> 13.1 Ejemplos</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Matemática para Ciencia Forense</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="vectores-y-plano-cartesiando" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> 4. Vectores y plano cartesiando<a href="vectores-y-plano-cartesiando.html#vectores-y-plano-cartesiando" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><br></p>
+<p>Un vector se define como una colección ordenada de datos, lo que resulta fundamental para analizar fenómenos en matemáticas y física. Estos vectores pueden representarse a través de un sistema cartesiano rectangular (plano <span class="math inline">\(x\; y\)</span>) o mediante un sistema de coordenadas polares, todo depende de las exigencias específicas de cada disciplina.</p>
+<p><br></p>
+<div id="componentes-de-un-vector" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> 4.1 Componentes de un vector<a href="vectores-y-plano-cartesiando.html#componentes-de-un-vector" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>En matemáticas, es común representar un vector con una notación específica que utiliza una letra en negrita con una flecha sobre ella, como <span class="math inline">\(\vec{\mathbf{v}}\)</span>. Cada componente del vector se denota usando la misma letra seguida de un subíndice, que indica su posición. Por ejemplo, para un vector bidimensional <span class="math inline">\(\vec{\mathbf{v}}\)</span>, lo expresamos de la siguiente manera: <span class="math inline">\(\vec{\mathbf{v}} = (v_1, v_2)\)</span>. Si <span class="math inline">\(v_1 = 2\)</span> y <span class="math inline">\(v_2 = 3\)</span>, entonces el vector se representa como <span class="math inline">\(\vec{\mathbf{v}} = (2, 3)\)</span>.</p>
+<p>Visualmente, los vectores pueden ser representados en un plano. Tomemos como ejemplo el vector anterior: su representación gráfica en el plano <span class="math inline">\(xy\)</span> sería la siguiente:</p>
+<p><br></p>
+<p><img src="www/grafica_1.png" width="35%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="operaciones-básicas-1" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> 4.2 Operaciones básicas<a href="vectores-y-plano-cartesiando.html#operaciones-básicas-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Los vectores son estructuras fundamentales en matemáticas, constituidos por conjuntos ordenados de datos que facilitan la ejecución de diversas operaciones matemáticas. Entre las operaciones más frecuentes se encuentran la suma, la resta y la multiplicación por escalares. Al sumar o restar vectores, los cálculos se realizan componente a componente. En cuanto a la multiplicación por un escalar, cada elemento del vector se multiplica de manera individual por el valor del escalar. Estas operaciones son esenciales para manipular y analizar vectores en diversos contextos matemáticos.</p>
+<p>Si tenemos los vectores <span class="math inline">\(\vec{\mathbf{e}}=(-2,3,1)\)</span> y <span class="math inline">\(\vec{\mathbf{w}}=(2,-4,4)\)</span>, entonces podemos calcular:</p>
+<p><br></p>
+<p><span class="math inline">\(2\;\vec{\mathbf{e}}+\vec{\mathbf{w}}\)</span></p>
+<p><span class="math display">\[
+2\;(-2,3,1)+(2,-4,4)\;=\;\underbrace{(-4,6,2)}_{\text{multiplico el}\\\text{vector por 2}}+(2,-4,4)\;=\;\underbrace{(-4+2,6-4,2+4)}_{\text{sumo entrada a entrada}}\;=\;(-2,2,6)
+\]</span></p>
+<p><br></p>
+<p><span class="math inline">\(\vec{\mathbf{e}}-\vec{\mathbf{w}}\)</span></p>
+<p><span class="math display">\[
+\vec{\mathbf{e}}-\vec{\mathbf{w}}\;=\;(-2,3,1)-(2,-4,4)\;=\;\underbrace{(-2-2,3+4,1-4)}_{\text{aplico leyes de los signos}\\\text{y resto entrada a entrada}}\;=\;(-4,7,-3)
+\]</span></p>
+<p><br></p>
+<p><span class="math inline">\(-\frac{1}{2}\vec{\mathbf{e}}-3\;\vec{\mathbf{w}}\)</span></p>
+<p><span class="math display">\[
+-\frac{1}{2}(-2,3,1)-3\;(2,-4,4)=\left(1,-\frac{3}{2},-\frac{1}{2}\right)-(6,-12,12)\;=\;\left(1-6,-\frac{3}{2}+12,-\frac{1}{2}-12\right)\;=\;
+\left(-5,\frac{21}{2},-\frac{25}{2}\right)
+\]</span></p>
+<p><br></p>
+</div>
+<div id="coordenadas-polares" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> 4.3 Coordenadas polares<a href="vectores-y-plano-cartesiando.html#coordenadas-polares" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Si bien un punto en el plano cartesiano puede describirse mediante sus coordenadas <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, el sistema de coordenadas polares ofrece una alternativa valiosa para representar vectores. En este sistema, se designa una línea como el <code>eje polar</code> y un punto fijo como el <code>polo</code>. Desde el polo, se traza una línea hasta un punto determinado en el espacio, denominada <code>vector</code>.</p>
+<p>En las coordenadas polares, el <code>radio vector</code>, comúnmente representado por <span class="math inline">\(r\)</span>, indica la longitud de la flecha y refleja la magnitud o módulo del vector. La dirección del vector, o ángulo polar, denota la inclinación del vector respecto a un eje de referencia, y se representa habitualmente por la letra griega <span class="math inline">\(\theta\)</span>. Por lo tanto, un punto <span class="math inline">\(P\)</span> en este sistema se expresa como <span class="math inline">\(P=(r, \;\theta)\)</span>, proporcionando una representación gráfica clara y precisa del punto en relación con el polo y el eje polar.</p>
+<p><br></p>
+<p><img src="www/grafica_2.png" width="35%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p>Podemos usar indistintamente las coordenadas polares o el sistema cartesiano, pero con frecuencia es necesario pasar de un sistema a otro. Las fórmulas para realizar esta transición son:</p>
+<p><span class="math display">\[
+x=r\;cos(\theta)\\
+y=r\;sen(\theta)
+\]</span></p>
+<p>Aquí, <span class="math inline">\(r\)</span> es la magnitud del vector y <span class="math inline">\(\theta\)</span> es el ángulo que forma con el eje positivo <span class="math inline">\(x\)</span>, medido en radianes o grados.</p>
+<p>Gráficamente, lo que tenemos es lo siguiente:</p>
+<p><br></p>
+<p><img src="www/grafica_3.png" width="35%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p>Para comprender cómo pasar de coordenadas polares a cartesianas y viceversa, empecemos con un ejemplo claro. Consideremos un punto <span class="math inline">\(P\)</span> cuyas coordenadas polares son <span class="math inline">\(P=(-2,135^\circ)\)</span>. Aquí, el primer componente, <span class="math inline">\(-2\)</span>, indica una magnitud negativa y el segundo componente, <span class="math inline">\(135^\circ\)</span>, el ángulo en relación con el eje positivo de las <span class="math inline">\(x\)</span>. Esto significa que el vector apunta en la dirección de 135 grados desde el origen pero con una magnitud de 2 en sentido contrario.</p>
+<p>Para convertir estas coordenadas polares en cartesianas, usamos las siguientes fórmulas:</p>
+<p><span class="math display">\[
+x = r \cos(\theta) = -2 \cos(135^\circ) = (-2) \left(-\frac{\sqrt{2}}{2}\right) = \sqrt{2}\\
+y = r \sin(\theta) = -2 \sin(135^\circ) = (-2) \left(\frac{\sqrt{2}}{2}\right) = -\sqrt{2}
+\]</span></p>
+<p>Así, el punto en coordenadas polares <span class="math inline">\(P=(-2,135^\circ)\)</span> se traduce a coordenadas cartesianas como <span class="math inline">\(P=(\sqrt{2}, -\sqrt{2})\)</span>.</p>
+<p><br></p>
+<p>Ahora, consideremos el caso contrario: <em>convertir de coordenadas cartesianas a polares</em>. Supongamos que tenemos un punto <span class="math inline">\(Q\)</span> con coordenadas cartesianas <span class="math inline">\((-3,-2)\)</span>. Para pasar a coordenadas polares, utilizamos:</p>
+<p><br></p>
+<p><span class="math display">\[
+r = \sqrt{x^2 + y^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{13} \approx 3.6\\
+\theta = \arctan\left(\frac{y}{x}\right) = \arctan\left(\frac{-2}{-3}\right) = \arctan\left(\frac{2}{3}\right) \approx 0.58 \text{ radianes}
+\]</span></p>
+<p>Nótese que se toma la parte positiva de la raíz, pues <span class="math inline">\(p=(r, \theta)\)</span> es un punto diferente a <span class="math inline">\(p&#39;=(-r, \theta)\)</span>.</p>
+<p>Finalmente, consideremos un Ejemplo práctico. Imaginemos que un carro se desplaza a <span class="math inline">\(30 \, km/h\)</span> formando un ángulo de <span class="math inline">\(45^\circ\)</span> respecto al punto de origen. Para encontrar los componentes del vector de velocidad en el plano cartesiano, aplicamos:</p>
+<p><span class="math display">\[
+x = r \cos(\theta) = 30 \cos(45^\circ) = 21.21\\
+y = r \sin(\theta) = 30 \sin(45^\circ) = 21.21
+\]</span></p>
+<p><br></p>
+</div>
+<div id="radianes-y-grados" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> 4.4 Radianes y grados<a href="vectores-y-plano-cartesiando.html#radianes-y-grados" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Cambiar de radianes a grados es una tarea común en matemáticas y física, ya que cada sistema se adapta mejor a diferentes situaciones. Para pasar de radianes a grados, usamos la siguiente fórmula:</p>
+<p><span class="math display">\[
+\text{Grados} = \text{Radianes} \times \left(\frac{180^\circ}{\pi}\right)
+\]</span></p>
+<p>Gráficamente, la equivalencia es la siguiente:</p>
+<p><br></p>
+<p><img src="www/grafica_4.png" width="40%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p>Por ejemplo, para convertir <span class="math inline">\(1\)</span> radian a grados, calculamos:</p>
+<p><span class="math display">\[
+1 \times \left(\frac{180^\circ}{\pi}\right) \approx 57.2958^\circ
+\]</span></p>
+<p>En el caso contrario, para convertir grados a radianes, utilizamos:</p>
+<p><span class="math display">\[
+\text{Radianes} = \text{Grados} \times \left(\frac{\pi}{180^\circ}\right)
+\]</span></p>
+<p>Así, <span class="math inline">\(45^\circ\)</span> convertido a radianes sería:</p>
+<p><span class="math display">\[
+45^\circ \times \left(\frac{\pi}{180^\circ}\right) = \frac{\pi}{4} \text{ radianes}
+\]</span></p>
+<p><br></p>
+</div>
+<div id="ángulos-y-el-teorema-de-pitágoras" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> 4.5 Ángulos y el Teorema de Pitágoras<a href="vectores-y-plano-cartesiando.html#ángulos-y-el-teorema-de-pitágoras" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>El Teorema de Pitágoras es un pilar fundamental en geometría y se utiliza ampliamente para resolver problemas relacionados con triángulos rectángulos. El teorema establece que en un triángulo rectángulo, el cuadrado de la longitud de la hipotenusa <span class="math inline">\(c\)</span> es igual a la suma de los cuadrados de las longitudes de los otros dos lados <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>:</p>
+<p><span class="math display">\[
+c^2 = a^2 + b^2
+\]</span></p>
+<p><br></p>
+<p><img src="www/grafica_5.png" width="27%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p>Este teorema también es útil para calcular ángulos en triángulos rectángulos usando las funciones trigonométricas seno, coseno y tangente. Por ejemplo, el ángulo <span class="math inline">\(\theta\)</span> entre la hipotenusa y uno de los lados puede encontrarse mediante:</p>
+<p><span class="math display">\[
+\cos(\theta) = \frac{a}{c}\qquad \quad \sin(\theta) = \frac{b}{c}\qquad \quad \tan(\theta) = \frac{b}{a}
+\]</span></p>
+<p>Si conocemos dos lados de un triángulo rectángulo, podemos calcular el ángulo usando la función arco tangente:</p>
+<p><span class="math display">\[
+\theta = \arctan\left(\frac{b}{a}\right)
+\]</span></p>
+<p>Estas fórmulas no solo nos permiten resolver triángulos sino también entender mejor la relación entre los ángulos y las longitudes en geometría euclidiana.</p>
+</div>
+<div id="ejemplos-3" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> 4.6 Ejemplos<a href="vectores-y-plano-cartesiando.html#ejemplos-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p><em>Ejemplo 1</em></p>
+<p>Convierte el punto <span class="math inline">\(P = (5, 60^\circ)\)</span> de coordenadas polares a coordenadas cartesianas.</p>
+<p>Para realizarlo, utilizamos las fórmulas <span class="math inline">\(x = r \cos(\theta)\)</span> y <span class="math inline">\(y = r \sin(\theta)\)</span>, donde <span class="math inline">\(r\)</span> es la distancia al origen y <span class="math inline">\(\theta\)</span> el ángulo medido en grados.</p>
+<p>Sustituimos los valores: <span class="math inline">\(r = 5\)</span> y <span class="math inline">\(\theta = 60^\circ\)</span>. Entonces, <span class="math inline">\(x = 5 \cdot \cos(60^\circ)\)</span> y <span class="math inline">\(y = 5 \cdot \sin(60^\circ)\)</span>. Sabemos que <span class="math inline">\(\cos(60^\circ) = \frac{1}{2}\)</span> y <span class="math inline">\(\sin(60^\circ) = \frac{\sqrt{3}}{2}\)</span>.</p>
+<p>Al realizar los cálculos, obtenemos <span class="math inline">\(x = 5 \cdot \frac{1}{2} = 2.5\)</span> y <span class="math inline">\(y = 5 \cdot \frac{\sqrt{3}}{2} \approx 4.33\)</span>. Por lo tanto, el punto en coordenadas cartesianas es <span class="math inline">\(P = (2.5, 4.33)\)</span>.</p>
+<hr />
+<p><em>Ejemplo 2</em></p>
+<p>Encuentra la hipotenusa de un triángulo rectángulo con lados <span class="math inline">\(a = 6\)</span> y <span class="math inline">\(b = 8\)</span>.</p>
+<p>Aplicando el teorema de Pitágoras, el cual establece que <span class="math inline">\(c^2 = a^2 + b^2\)</span>, donde <span class="math inline">\(c\)</span> es la hipotenusa y <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> son los catetos.</p>
+<p>Entonces, sustituimos: <span class="math inline">\(c^2 = 6^2 + 8^2 = 36 + 64 = 100\)</span>.</p>
+<p>Al tomar la raíz cuadrada positiva de <span class="math inline">\(c^2 = 100\)</span>, obtenemos <span class="math inline">\(c = \sqrt{100} = 10\)</span>. Por lo tanto, la hipotenusa del triángulo mide 10 unidades.</p>
+<hr />
+<p><em>Ejemplo 3</em></p>
+<p>Calcula la magnitud del vector <span class="math inline">\(\vec{v} = (-3, 4)\)</span>.</p>
+<p>La magnitud se encuentra usando <span class="math inline">\(|\vec{v}| = \sqrt{x^2 + y^2}\)</span>, donde <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> son las componentes del vector. Sustituyendo <span class="math inline">\(x = -3\)</span> y <span class="math inline">\(y = 4\)</span>, tenemos <span class="math inline">\(|\vec{v}| = \sqrt{(-3)^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25}\)</span>.</p>
+<p>El resultado de la raíz es <span class="math inline">\(|\vec{v}| = 5\)</span>. Esto significa que la magnitud o longitud del vector <span class="math inline">\(\vec{v}\)</span> es de 5 unidades.</p>
+<hr />
+<p><em>Ejemplo 4</em></p>
+<p>Convierte el punto <span class="math inline">\(Q = (-4, 3)\)</span> de coordenadas cartesianas a coordenadas polares.</p>
+<p>Primero, calculamos la magnitud <span class="math inline">\(r\)</span> con la fórmula <span class="math inline">\(r = \sqrt{x^2 + y^2}\)</span>. Sustituyendo <span class="math inline">\(x = -4\)</span> y <span class="math inline">\(y = 3\)</span>, obtenemos <span class="math inline">\(r = \sqrt{(-4)^2 + 3^2} = \sqrt{16 + 9} = \sqrt{25} = 5\)</span>.</p>
+<p>Para encontrar el ángulo <span class="math inline">\(\theta\)</span>, utilizamos <span class="math inline">\(\theta = \arctan\left(\frac{y}{x}\right)\)</span>.</p>
+<p>Esto nos da <span class="math inline">\(\theta = \arctan\left(\frac{3}{-4}\right) \approx 143.13^\circ\)</span>, teniendo en cuenta que el punto está en el segundo cuadrante. Por lo tanto, las coordenadas polares son <span class="math inline">\(Q = (5, 143.13^\circ)\)</span>.</p>
+<hr />
+<p><em>Ejemplo 5</em></p>
+<p>Dados los vectores <span class="math inline">\(\vec{u} = (2, -1, 3)\)</span> y <span class="math inline">\(\vec{v} = (-1, 4, 2)\)</span>, calcula su suma.</p>
+<p>Sumamos las componentes correspondientes: <span class="math inline">\(\vec{u} + \vec{v} = (2 + (-1), -1 + 4, 3 + 2) = (1, 3, 5)\)</span>.</p>
+<p>El resultado de la suma es <span class="math inline">\(\vec{u} + \vec{v} = (1, 3, 5)\)</span>, lo cual representa un nuevo vector con estas componentes, resultado de combinar los vectores originales.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="jerarquía-de-operaciones.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="logaritmos-y-exponentes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"includes": {
+"in_header": "header.html"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

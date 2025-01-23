@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Matemática para Ciencia Forense</title>
-  <meta name="description" content="Page not found | Matemática para Ciencia Forense" />
+  <title>6 5 Logaritmos y exponentes | Matemática para Ciencia Forense</title>
+  <meta name="description" content="6 5 Logaritmos y exponentes | Matemática para Ciencia Forense" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Matemática para Ciencia Forense" />
+  <meta property="og:title" content="6 5 Logaritmos y exponentes | Matemática para Ciencia Forense" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Matemática para Ciencia Forense" />
+  <meta name="twitter:title" content="6 5 Logaritmos y exponentes | Matemática para Ciencia Forense" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="vectores-y-plano-cartesiando.html"/>
+<link rel="next" href="introducción-a-las-funciones.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -159,19 +159,113 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="logaritmos-y-exponentes" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> 5 Logaritmos y exponentes<a href="logaritmos-y-exponentes.html#logaritmos-y-exponentes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><br></p>
+<p>Un logaritmo define el exponente al que se debe elevar una base para obtener un número específico.<br />
+Si queremos saber a qué exponente debemos elevar la base 2 para obtener el número 8, usamos el logaritmo base 2 de 8, que se escribe como <span class="math inline">\(log_2(8)\)</span> y cuyo resultado es 3.</p>
+<p>Esto se interpreta como: “El logaritmo de 8 en base 2 es 3” y se escribe:</p>
+<p><span class="math display">\[
+log_2(8) = 3
+\]</span></p>
+<p><br></p>
+<div id="propiedades-de-los-logaritmos" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> 5.1 Propiedades de los logaritmos<a href="logaritmos-y-exponentes.html#propiedades-de-los-logaritmos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>Los logaritmos tienen propiedades que facilitan su manejo en diversas operaciones matemáticas. Estas propiedades son fundamentales en el cálculo y se derivan directamente de la definición de logaritmo. A continuación, se explican las principales propiedades:</p>
+<ol style="list-style-type: decimal">
+<li><p>Si se tiene el logaritmo de un <strong>producto</strong>, este se puede descomponer en la suma de los logaritmos de los factores:<br />
+<span class="math display">\[
+\log_b(xy) = \log_b(x) + \log_b(y)
+\]</span><br />
+Esto significa que, al multiplicar dos números, el logaritmo del resultado es equivalente a sumar los logaritmos de esos números.</p></li>
+<li><p>El logaritmo de un <strong>cociente</strong> se puede expresar como la resta de los logaritmos del numerador y el denominador:<br />
+<span class="math display">\[
+\log_b\left(\frac{x}{y}\right) = \log_b(x) - \log_b(y)
+\]</span><br />
+Esto implica que dividir dos números equivale a restar los logaritmos de cada uno.</p></li>
+<li><p>Si un número está elevado a una <strong>potencia</strong>, el logaritmo de este puede transformarse en el producto de la potencia por el logaritmo de la base:<br />
+<span class="math display">\[
+\log_b(x^y) = y \cdot \log_b(x)
+\]</span><br />
+Esta propiedad permite simplificar cálculos cuando se trabaja con números elevados a una potencia, ya que convierte la operación exponencial en una multiplicación.</p></li>
+<li><p>Si la base <span class="math inline">\(b\)</span> es igual al número de Euler <span class="math inline">\(e\)</span>, entonces se le conoce como <em>logaritmo natural</em> y se escribe como <span class="math inline">\(\ln(x)\)</span>.</p></li>
+</ol>
+<p>Estas propiedades son esenciales para resolver problemas que involucren logaritmos y se aplican en diversas áreas como la química, la física y el análisis de datos, facilitando cálculos que serían complejos de realizar de otra manera.</p>
+<p><br></p>
+</div>
+<div id="relación-entre-logaritmos-y-potencias" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> 5.2 Relación entre logaritmos y potencias<a href="logaritmos-y-exponentes.html#relación-entre-logaritmos-y-potencias" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p>En química, los logaritmos son utilizados para calcular la acidez (pH) de las soluciones usando la siguiente fórmula:</p>
+<p><span class="math display">\[
+pH = -log_{10}(H^+)
+\]</span></p>
+<p>Donde <span class="math inline">\(H^+\)</span> es la concentración de iones de hidrógeno en iones.</p>
+<p>Por ejemplo, si abordamos el problema de determinar el pH de una concentración de iones de hidrógeno de <span class="math inline">\(10^{-8}\)</span> usamos el siguiente procedimiento:</p>
+<p>Sustituimos <span class="math inline">\(H^+\)</span> por la concentración dada:</p>
+<p><span class="math display">\[
+   pH = -log_{10}(10^{-8})
+   \]</span></p>
+<p>Usando las propiedades de los logaritmos (el exponente <span class="math inline">\(-8\)</span> pasa a ser un coeficiente):</p>
+<p><span class="math display">\[
+   pH = -(-8) \cdot log_{10}(10)
+   \]</span></p>
+<p>Como <span class="math inline">\(log_{10}(10) = 1\)</span>:</p>
+<p><span class="math display">\[
+   pH = -(-8) \cdot 1 = 8
+   \]</span></p>
+<p>En otro ejercicio, dada una solución con pH de 7, encontrar la concentración de <span class="math inline">\(H^+\)</span></p>
+<p>Partimos de la fórmula básica:</p>
+<p><span class="math display">\[
+   7 = -log_{10}(H^+)
+   \]</span></p>
+<p>Reorganizamos para despejar <span class="math inline">\(H^+\)</span>:</p>
+<p><span class="math display">\[
+   log_{10}(H^+) = -7
+   \]</span></p>
+<p>Aplicamos la operación inversa del logaritmo (potenciación):</p>
+<p><span class="math display">\[
+   H^+ = 10^{-7}
+   \]</span></p>
+<p>Así, la concentración de iones de hidrógeno <span class="math inline">\(H^+\)</span> es <span class="math inline">\(10^{-7}\)</span> moles por litro.</p>
+<p><br></p>
+</div>
+<div id="ejemplos-4" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> 5.3 Ejemplos<a href="logaritmos-y-exponentes.html#ejemplos-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<p><em>Ejemplo 1:</em></p>
+<p><span class="math display">\[\log_4(16) + \log_4(4)\]</span></p>
+<p>Para resolver <span class="math inline">\(\log_4(16)\)</span>, debemos responder a la pregunta: <strong>¿A qué exponente hay que elevar la base <span class="math inline">\(4\)</span> para obtener <span class="math inline">\(16\)</span>?</strong> Sabemos que <span class="math inline">\(4^2 = 16\)</span>, lo que implica que <span class="math inline">\(\log_4(16) = 2\)</span>. Este resultado confirma que <span class="math inline">\(16\)</span> es el cuadrado de <span class="math inline">\(4\)</span>.</p>
+<p>Ahora, resolvemos <span class="math inline">\(\log_4(4)\)</span>. En este caso, la pregunta es: ¿A qué exponente hay que elevar <span class="math inline">\(4\)</span> para obtener <span class="math inline">\(4\)</span>? Como <span class="math inline">\(4^1 = 4\)</span>, concluimos que <span class="math inline">\(\log_4(4) = 1\)</span>. Esto indica que cualquier número elevado a la potencia de <span class="math inline">\(1\)</span> es igual a sí mismo.</p>
+<p>Finalmente, sumamos los resultados obtenidos: <span class="math inline">\(\log_4(16) + \log_4(4) = 2 + 1 = 3\)</span>. Por lo tanto, el valor final es <span class="math inline">\(\log_4(16) + \log_4(4) = 3\)</span>.</p>
+<hr />
+<p><em>Ejemplo 2:</em>
+<span class="math display">\[\log_8(64) - \log_8(8)\]</span></p>
+<p>Para resolver <span class="math inline">\(\log_8(64)\)</span>, debemos determinar a qué exponente se debe elevar la base <span class="math inline">\(8\)</span> para obtener <span class="math inline">\(64\)</span>. Sabemos que <span class="math inline">\(8^2 = 64\)</span>, por lo que concluimos que <span class="math inline">\(\log_8(64) = 2\)</span>. Esto indica que <span class="math inline">\(64\)</span> es el cuadrado de <span class="math inline">\(8\)</span>, lo cual responde a la primera parte del problema.</p>
+<p>A continuación, resolvemos <span class="math inline">\(\log_8(8)\)</span>. En este caso, buscamos el exponente al cual elevar <span class="math inline">\(8\)</span> para que resulte en <span class="math inline">\(8\)</span>. Como <span class="math inline">\(8^1 = 8\)</span>, podemos afirmar que <span class="math inline">\(\log_8(8) = 1\)</span>. Este resultado refleja que cualquier número elevado a la potencia <span class="math inline">\(1\)</span> es igual a sí mismo.</p>
+<p>Finalmente, realizamos la resta de los resultados obtenidos: <span class="math inline">\(\log_8(64) - \log_8(8) = 2 - 1 = 1\)</span>. Por lo tanto, el valor final es <span class="math inline">\(\log_8(64) - \log_8(8) = 1\)</span>.</p>
+<hr />
+<p><em>Ejemplo 3:</em></p>
+<p><span class="math display">\[2 \cdot \log_3(9)\]</span></p>
+<p>Para resolver <span class="math inline">\(\log_3(9)\)</span>, debemos determinar a qué exponente se debe elevar la base <span class="math inline">\(3\)</span> para obtener <span class="math inline">\(9\)</span>. Sabemos que <span class="math inline">\(3^2 = 9\)</span>, lo que implica que <span class="math inline">\(\log_3(9) = 2\)</span>. Este resultado indica que <span class="math inline">\(9\)</span> es el cuadrado de <span class="math inline">\(3\)</span>, respondiendo así a la primera parte del problema.</p>
+<p>Luego, multiplicamos el resultado obtenido por <span class="math inline">\(2\)</span>. Esto se calcula como <span class="math inline">\(2 \cdot \log_3(9) = 2 \cdot 2 = 4\)</span>. La multiplicación refleja la propiedad que escala el logaritmo al multiplicar por un factor constante.</p>
+<p>Por lo tanto, el resultado final es <span class="math inline">\(2 \cdot \log_3(9) = 4\)</span>.</p>
+<hr />
+<p><em>Ejemplo 4:</em>
+<span class="math display">\[\log_5(625)\]</span></p>
+<p>Para resolver <span class="math inline">\(\log_5(625)\)</span>, necesitamos encontrar a qué exponente se debe elevar la base <span class="math inline">\(5\)</span> para obtener <span class="math inline">\(625\)</span>. Sabemos que <span class="math inline">\(5^4 = 625\)</span>, lo que significa que el exponente que satisface esta relación es <span class="math inline">\(4\)</span>. Esto indica que <span class="math inline">\(625\)</span> es la cuarta potencia de <span class="math inline">\(5\)</span>.</p>
+<p>Por lo tanto, el resultado final es <span class="math inline">\(\log_5(625) = 4\)</span>.</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="vectores-y-plano-cartesiando.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introducción-a-las-funciones.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

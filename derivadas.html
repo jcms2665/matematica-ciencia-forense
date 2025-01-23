@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>12 11. Derivadas | Matemática para Ciencia Forense</title>
+  <meta name="description" content="12 11. Derivadas | Matemática para Ciencia Forense" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="12 11. Derivadas | Matemática para Ciencia Forense" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="12 11. Derivadas | Matemática para Ciencia Forense" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introducción-al-cálculo.html"/>
+<link rel="next" href="integrales.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<p style="font-weight: bold; color: #0B3D62;">Contenido</p>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="notación-científica.html"><a href="notación-científica.html"><i class="fa fa-check"></i><b>2</b> 1. Notación Científica</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="notación-científica.html"><a href="notación-científica.html#representación-numérica"><i class="fa fa-check"></i><b>2.1</b> 1.1 Representación numérica</a></li>
+<li class="chapter" data-level="2.2" data-path="notación-científica.html"><a href="notación-científica.html#operaciones-básicas"><i class="fa fa-check"></i><b>2.2</b> 1.2 Operaciones básicas</a></li>
+<li class="chapter" data-level="2.3" data-path="notación-científica.html"><a href="notación-científica.html#ejemplos"><i class="fa fa-check"></i><b>2.3</b> 1.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="unidades-métricas.html"><a href="unidades-métricas.html"><i class="fa fa-check"></i><b>3</b> 2 Unidades métricas</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="unidades-métricas.html"><a href="unidades-métricas.html#factores-de-conversión"><i class="fa fa-check"></i><b>3.1</b> 2.1. Factores de conversión</a></li>
+<li class="chapter" data-level="3.2" data-path="unidades-métricas.html"><a href="unidades-métricas.html#sistemas-métricos"><i class="fa fa-check"></i><b>3.2</b> 2.2 Sistemas métricos</a></li>
+<li class="chapter" data-level="3.3" data-path="unidades-métricas.html"><a href="unidades-métricas.html#ejemplos-1"><i class="fa fa-check"></i><b>3.3</b> 2.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html"><i class="fa fa-check"></i><b>4</b> 3 Jerarquía de operaciones</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#leyes-de-los-signos"><i class="fa fa-check"></i><b>4.1</b> 3.1 Leyes de los signos</a></li>
+<li class="chapter" data-level="4.2" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#propiedades-de-las-operaciones"><i class="fa fa-check"></i><b>4.2</b> 3.2 Propiedades de las operaciones</a></li>
+<li class="chapter" data-level="4.3" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#orden-de-operaciones"><i class="fa fa-check"></i><b>4.3</b> 3.3 Orden de operaciones</a></li>
+<li class="chapter" data-level="4.4" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#leyes-de-los-exponentes"><i class="fa fa-check"></i><b>4.4</b> 3.4 Leyes de los exponentes</a></li>
+<li class="chapter" data-level="4.5" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#ejemplos-2"><i class="fa fa-check"></i><b>4.5</b> 3.5 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html"><i class="fa fa-check"></i><b>5</b> 4. Vectores y plano cartesiando</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#componentes-de-un-vector"><i class="fa fa-check"></i><b>5.1</b> 4.1 Componentes de un vector</a></li>
+<li class="chapter" data-level="5.2" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#operaciones-básicas-1"><i class="fa fa-check"></i><b>5.2</b> 4.2 Operaciones básicas</a></li>
+<li class="chapter" data-level="5.3" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#coordenadas-polares"><i class="fa fa-check"></i><b>5.3</b> 4.3 Coordenadas polares</a></li>
+<li class="chapter" data-level="5.4" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#radianes-y-grados"><i class="fa fa-check"></i><b>5.4</b> 4.4 Radianes y grados</a></li>
+<li class="chapter" data-level="5.5" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#ángulos-y-el-teorema-de-pitágoras"><i class="fa fa-check"></i><b>5.5</b> 4.5 Ángulos y el Teorema de Pitágoras</a></li>
+<li class="chapter" data-level="5.6" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#ejemplos-3"><i class="fa fa-check"></i><b>5.6</b> 4.6 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html"><i class="fa fa-check"></i><b>6</b> 5 Logaritmos y exponentes</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#propiedades-de-los-logaritmos"><i class="fa fa-check"></i><b>6.1</b> 5.1 Propiedades de los logaritmos</a></li>
+<li class="chapter" data-level="6.2" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#relación-entre-logaritmos-y-potencias"><i class="fa fa-check"></i><b>6.2</b> 5.2 Relación entre logaritmos y potencias</a></li>
+<li class="chapter" data-level="6.3" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#ejemplos-4"><i class="fa fa-check"></i><b>6.3</b> 5.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="introducción-a-las-funciones.html"><a href="introducción-a-las-funciones.html"><i class="fa fa-check"></i><b>7</b> 6. Introducción a las funciones</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="introducción-a-las-funciones.html"><a href="introducción-a-las-funciones.html#componentes-básicos-de-una-función"><i class="fa fa-check"></i><b>7.1</b> 6.1 Componentes básicos de una función</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="gráficas-de-funciones.html"><a href="gráficas-de-funciones.html"><i class="fa fa-check"></i><b>8</b> 7. Gráficas de funciones</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="gráficas-de-funciones.html"><a href="gráficas-de-funciones.html#interpretación"><i class="fa fa-check"></i><b>8.1</b> 7.1. Interpretación</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="funciones-especiales.html"><a href="funciones-especiales.html"><i class="fa fa-check"></i><b>9</b> 8. Funciones especiales</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="funciones-especiales.html"><a href="funciones-especiales.html#funciones-trigonométricas"><i class="fa fa-check"></i><b>9.1</b> 8.2. Funciones trigonométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="funciones-inversas.html"><a href="funciones-inversas.html"><i class="fa fa-check"></i><b>10</b> 9. Funciones inversas</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="funciones-inversas.html"><a href="funciones-inversas.html#funciones-lineales"><i class="fa fa-check"></i><b>10.1</b> 9.1. Funciones lineales</a></li>
+<li class="chapter" data-level="10.2" data-path="funciones-inversas.html"><a href="funciones-inversas.html#exponentes-y-logaritmos"><i class="fa fa-check"></i><b>10.2</b> 9.2. Exponentes y logaritmos</a></li>
+<li class="chapter" data-level="10.3" data-path="funciones-inversas.html"><a href="funciones-inversas.html#ejemplos-5"><i class="fa fa-check"></i><b>10.3</b> 9.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="introducción-al-cálculo.html"><a href="introducción-al-cálculo.html"><i class="fa fa-check"></i><b>11</b> 10. Introducción al cálculo</a></li>
+<li class="chapter" data-level="12" data-path="derivadas.html"><a href="derivadas.html"><i class="fa fa-check"></i><b>12</b> 11. Derivadas</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="derivadas.html"><a href="derivadas.html#ejemplos-6"><i class="fa fa-check"></i><b>12.1</b> 11.1 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="integrales.html"><a href="integrales.html"><i class="fa fa-check"></i><b>13</b> 12. Integrales</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="integrales.html"><a href="integrales.html#ejemplos-7"><i class="fa fa-check"></i><b>13.1</b> 12.1 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html"><i class="fa fa-check"></i><b>14</b> 13. Ecuaciones de primer grado</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html#ejemplos-8"><i class="fa fa-check"></i><b>14.1</b> 13.1 Ejemplos</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Matemática para Ciencia Forense</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="derivadas" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">12</span> 11. Derivadas<a href="derivadas.html#derivadas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><br></p>
+<p>Las derivadas analizan cómo cambia una función en relación a sus variables independientes. En otras palabras, la derivada de una función en un punto mide la tasa de cambio instantánea de la función en ese punto, lo que resulta útil para describir fenómenos como la velocidad, la aceleración o la pendiente de una curva.</p>
+<p>En esta sección, presentamos las reglas básicas de derivación que facilitan el cálculo de derivadas en diferentes contextos. Estas reglas se aplican tanto a funciones constantes como a potencias, funciones escaladas por constantes y combinaciones de funciones, proporcionando un marco claro y sistemático para resolver problemas.</p>
+<p><br></p>
+<p><strong>Reglas de las Derivadas</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Si <span class="math inline">\(f(x)=k\)</span>, donde <em>k</em> es una constante, entonces para cualquier <span class="math inline">\(x\)</span>, se tiene que <span class="math inline">\(f^{\prime}(x)=0\)</span></p></li>
+<li><p>Si <span class="math inline">\(f(x)=x\)</span>, entonces <span class="math inline">\(f^{\prime}(x)=1\)</span></p></li>
+<li><p>Si <span class="math inline">\(f(x)=x^n\)</span>, donde <em>n</em> es un entero positivo, entonces <span class="math inline">\(f^{\prime}(x)=nx^{n-1}\)</span></p></li>
+<li><p>Si <span class="math inline">\(k\)</span> es una constante <span class="math inline">\(f\)</span> es una función derivable, entonces <span class="math inline">\((kf)^{\prime} (x)=k \cdot f^{\prime}(x)\)</span></p></li>
+<li><p>Si <em>f</em> y <em>g</em> son funciones derivables, entonces <span class="math inline">\((f+g)^{\prime}(x)=f^{\prime}(x)+ g^{\prime}(x)\)</span></p></li>
+<li><p>Si <em>f</em> y <em>g</em> son funciones derivables, entonces <span class="math inline">\((f-g)^{\prime}(x)=f^{\prime}(x)- g^{\prime}(x)\)</span></p></li>
+<li><p>Si <em>f</em> y <em>g</em> son funciones derivables, entonces <span class="math inline">\((f\cdot g)^{\prime}(x)=f(x) g^{\prime}(x)+g(x)f^{\prime}(x)\)</span></p></li>
+<li><p>Sean <em>f</em> y <em>g</em> funciones derivables con <span class="math inline">\(g(x)\neq 0\)</span>. Entonces
+<span class="math display">\[
+(\frac{f}{g})^{\prime}(x)=\frac{g(x)f^{\prime}(x)-f(x)g^{\prime}(x)}{g^2(x)}
+\]</span></p></li>
+<li><p>Si <span class="math inline">\(g(x)\)</span> es derivable en <span class="math inline">\(x\)</span> y <span class="math inline">\(f(x)\)</span> es derivable en <span class="math inline">\(g(x)\)</span>, entonces la función compuesta <span class="math inline">\((f\circ g)\)</span>, definida por <span class="math inline">\((f\circ g)(x)=f(g(x))\)</span>, es derivable en <em>x</em> y
+<span class="math display">\[
+(f\circ g)^{\prime}(x)=f^{\prime}(g(x))g^{\prime}(x)
+\]</span></p></li>
+<li><p>Si <span class="math inline">\(f(x)=ln(u(x))\)</span>, entonces <span class="math inline">\(f^{\prime}(x)=\frac{u&#39;(x)}{u(x)}\)</span></p></li>
+<li><p>Si <span class="math inline">\(f(x)=ln(x)\)</span>, entonces <span class="math inline">\(f^{\prime}(x)=\frac{1}{x}\)</span></p></li>
+<li><p>Si <span class="math inline">\(f(x)=e^{u(x)}\)</span>, entonces <span class="math inline">\(f^{\prime}(x)=u^{\prime}(x)e^{u(x)}\)</span>. Un caso particular es cuando <span class="math inline">\(f(x)=e^{x}\)</span>, en cuyo caso <span class="math inline">\(u(x)=x\)</span> y <span class="math inline">\(u^{\prime}(x)=1\)</span>, por lo que <span class="math inline">\(f^{\prime}(x)=e^{x}\)</span></p></li>
+<li><p>Si <span class="math inline">\(f(x)=sen(u(x))\)</span>, entonces <span class="math inline">\(f&#39;(x)=u&#39;(x)\cdot cos(u(x))\)</span></p></li>
+<li><p>Si <span class="math inline">\(f(x)=cos(u(x))\)</span>, entonces <span class="math inline">\(f&#39;(x)=-u&#39;(x)\cdot sen(u(x))\)</span></p></li>
+</ol>
+<p><br></p>
+<div id="ejemplos-6" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> 11.1 Ejemplos<a href="derivadas.html#ejemplos-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="80%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><img src="www/buscador.png" alt="Imagen" style="width: 90%;"></td>
+<td>Antes de aplicar una regla en particular, conviene preguntarnos <strong>¿se puede simplificar la expresión?</strong>, en algunas ocasiones la simplificación reduce significativamente la complejidad del problema que debemos resolver. El siguiente paso es tratar de descomponer la expresión en funciones más simples. Para evitar errores, una buena práctica es comprobar que a partir de <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> podemos obtener la función original. Para ello, en la mayoría de los casos, conviene encontrar sus derivadas y partir de ello el problema se reduce a sustituir los términos de acuerdo con la regla que se requiera.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><em>Ejemplo 1</em></p>
+<p><span class="math display">\[
+f(x)=\frac{5x^4-3x^3}{x^5}
+\]</span></p>
+<p>El primer paso para resolver cualquier Ejemplo es responder a la pregunta <strong>¿se puede simplificar la expresión?</strong> Si la respuesta es afirmativa, entonces conviene modificar la expresión para hacerla más fácil de manejar. Sin embargo, debemos tener cuidado de que las reglas que apliquemos sean correctas ya que de otra manera podemos alterar la función original. Una idea que ayuda a comprender esta situación es la siguiente: cuando tenemos la fracción <span class="math inline">\(\frac{650}{1300}\)</span> y dividimos por 650 al numerador y denominador, obtenemos <span class="math inline">\(\frac{1}{2}\)</span> y la fracción no se altera.</p>
+<p>Retomando la expresión inicial, vemos que se trata de una fracción y en cuyo caso está la regla número 8. No obstante, la expresión <span class="math inline">\(x^{5}\)</span> es común a <span class="math inline">\(5x^4\)</span> y <span class="math inline">\(-3x^3\)</span> por lo tanto, conviene visualizar la ecuación de la siguiente forma:</p>
+<p><span class="math display">\[
+f(x)=\frac{5x^4}{x^5}-\frac{3x^3}{x^5}
+\]</span></p>
+<p>Podemos simplificar aún más si aplicamos las leyes de los exponentes, para ello subimos el denominador con el signo negativo en los exponentes.</p>
+<p><span class="math display">\[
+f(x)=5x^{4-5}-3x^{3-5}
+\]</span></p>
+<p>y luego simplificamos:</p>
+<p><span class="math display">\[
+f(x)=5x^{-1}-3x^{-2}
+\]</span></p>
+<p>Conviene hacer notar que hasta este punto lo único hemos hecho es simplificar la expresión para facilitar el cálculo. Ahora sí, tomamos la versión simplificada del paso anterior y aplicamos la regla: si <span class="math inline">\(f(x)=x^n\)</span>, entonces <span class="math inline">\(f^{\prime}(x)=nx^{n-1}\)</span> en ambos términos. Así obtenemos la derivada de la forma:</p>
+<p><span class="math display">\[
+f^{\prime}(x)=-(1)\cdot5x^{-1-1}-(-2)\cdot3x^{-2-1}
+\]</span></p>
+<p>Simplificamos nuevamente:</p>
+<p><span class="math display">\[
+f^{\prime}(x)=-5x^{-2}+6x^{-3}
+\]</span></p>
+<p>Con lo cual ya tenemos la derivada de la función original. Para dejar los exponentes positivos, bajamos <span class="math inline">\(x\)</span> al denominador y nos queda:</p>
+<p><span class="math display">\[
+f^{\prime}(x)=\frac{5}{x}-\frac{3}{x^2}
+\]</span></p>
+<hr />
+<p><em>Ejemplo 2</em></p>
+<p>Obtener la derivada de la función:
+<span class="math display">\[
+t(x)=ln(x^2-3x+2)
+\]</span></p>
+<p>El primer paso para resolver el Ejemplo es preguntarnos <strong>¿se puede simplificar la expresión?</strong> En este caso no tenemos factores comunes como en el caso anterior, pero sí podemos descomponer la expresión <span class="math inline">\(t(x)\)</span> en dos funciones individuales <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> de la siguiente manera:</p>
+<p><span class="math display">\[
+g(x)=x^2-3x+2
+\]</span></p>
+<p><span class="math display">\[
+f(x)=ln(x)
+\]</span></p>
+<p>Para estar seguros que la descomposición está bien, reconstruímos <span class="math inline">\(t(x)\)</span> a partir de <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span>:</p>
+<p><span class="math display">\[
+t(x)=f(g(x))=ln(g(x))=ln(x^2-3x+2)
+\]</span></p>
+<p>Una vez que comprobamos que la descomposición en <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> es correcta, obtenemos las derivadas individuales: <span class="math inline">\(f^{\prime}(x)=\frac{1}{x}\)</span> y <span class="math inline">\(g^{\prime}(x)=2x-3\)</span>.</p>
+<p>Una vez que tenemos todos los elementos, ya podemos aplicar la regla <span class="math inline">\((f\circ g)^{\prime}(x)=f^{\prime}(g(x))g^{\prime}(x)\)</span> que es, en escencia, una sustitución de los términos en la fórmula anterior y obtenemos:</p>
+<p><span class="math display">\[
+t^{\prime}(x)=\frac{1}{x^2-3x+2}\cdot(2x-3)
+\]</span></p>
+<p>Agrupamos los términos y tenemos:</p>
+<p><span class="math display">\[
+t^{\prime}(x)=\frac{2x-3}{x^2-3x+2}
+\]</span></p>
+<hr />
+<p><em>Ejemplo 3</em></p>
+<p>Obtener la derivada de la función:
+<span class="math display">\[
+t(x)=7e^{x^2+1}
+\]</span></p>
+<p>La expresión tiene un exponente con un término al cuadrado, por lo que no hay una forma de simplificar, a pesar de que función parece compleja, la solución es descomponerla en términos que sean más fáciles de manejar. Sabemos que la función tiene la forma <span class="math inline">\(f(x)=e^{u(x)}\)</span>, por lo que consideramos <span class="math inline">\(u(x)=x^2+1\)</span>, además el número <span class="math inline">\(7\)</span> es una constante que multiplica a una función por lo que se mantiene fija (ver regla 4).</p>
+<p>Ahora bien, una vez que hemos identificado a <span class="math inline">\(u(x)\)</span> basta con aplicar la regla <span class="math inline">\(f^{\prime}(x)=u^{\prime}(x)e^{u(x)}\)</span>, para obtener:</p>
+<p><span class="math display">\[
+t^{\prime}(x)=7\cdot(2x)\cdot e^{x^2+1}
+\]</span></p>
+<p>Al simplificar, la derivada final queda:</p>
+<p><span class="math display">\[
+t^{\prime}(x)=14x\cdot e^{x^2+1}
+\]</span></p>
+<hr />
+<p><em>Ejemplo 4</em></p>
+<p>Obtener la derivada de la función:
+<span class="math display">\[
+p(x)=(x^5-x^3+3)^4
+\]</span></p>
+<p>La expresión tiene un polinomio elevado a la cuarta potencia. Una forma de simplificar es multiplicar la expresión <span class="math inline">\(x^5-x^3+3\)</span> cuatro veces, sin embargo, esto resultaría muy complicado por la cantidad de términos que obtendríamos. La solución es descomponer la expresión en dos funciones <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> que podamos manejar fácilmente:</p>
+<p><span class="math display">\[
+g(x)=x^5-x^3+3
+\]</span></p>
+<p><span class="math display">\[
+f(x)=x^4
+\]</span></p>
+<p>Para estar seguros que la descomposición es correcta, reconstruímos <span class="math inline">\(p(x)\)</span> a partir de <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span>:</p>
+<p><span class="math display">\[
+p(x)=f(g(x))=(g(x))^4=(x^5-x^3+3)^4
+\]</span></p>
+<p>Una vez que llegamos a la función original, entonces obtenemos las derivadas de forma individual: <span class="math inline">\(f^{\prime}(x)=4x^3\)</span> y <span class="math inline">\(g^{\prime}(x)=5x^4-3x^2\)</span></p>
+<p>De esta forma, ya podemos aplicar la regla <span class="math inline">\((f\circ g)^{\prime}(x)=f^{\prime}(g(x))g^{\prime}(x)\)</span> y con ello obtenemos:</p>
+<p><span class="math display">\[
+p^{\prime}(x)=4(x^5-x^3+3)^3\cdot (5x^4-3x^2)
+\]</span></p>
+<hr />
+<p><em>Ejemplo 5</em></p>
+<p>Obtener la derivada de la función:
+<span class="math display">\[
+f(x)=\sqrt[5]{\frac{x^2+x}{x+1}}
+\]</span></p>
+<p>El primer paso para resolver el Ejemplo es preguntarnos <strong>¿se puede simplificar la expresión?</strong> A pesar de que tenemos una raíz cuadrada, la fracción se puede simplificar si factorizamos el numerador de la siguiente manera:</p>
+<p><span class="math display">\[
+f(x)=\sqrt[5]{\frac{x(x+1)}{x+1}}
+\]</span></p>
+<p>Luego, eliminamos terminos semejantes y nos queda:</p>
+<p><span class="math display">\[
+f(x)=\sqrt[5]{x}
+\]</span></p>
+<p>Sin embargo, esto es equivalente a <span class="math inline">\(f(x)=x^{1/5}\)</span>, por lo que podemos aplicar la regla: si <span class="math inline">\(f(x)=x^n\)</span>, entonces <span class="math inline">\(f^{\prime}(x)=nx^{n-1}\)</span>. Con lo cual tenemos:</p>
+<p><span class="math display">\[
+f^{\prime}(x)=\frac{1}{5}\cdot x^{\frac{1}{5}-1}
+\]</span></p>
+<p>Al hacer la resta de fracciones en los exponentes, tenemos:</p>
+<p><span class="math display">\[
+f^{\prime}(x)=\frac{1}{5}\cdot x^{-\frac{4}{5}}
+\]</span></p>
+<p>Lo cual se puede visualizar como:</p>
+<p><span class="math display">\[
+f^{\prime}(x)=\frac{1}{5\sqrt[5]{x^4}}
+\]</span></p>
+<hr />
+<p><em>Ejemplo 6</em></p>
+<p>Obtener la derivada de la función:
+<span class="math display">\[
+f(x)=sen(x^4)
+\]</span></p>
+<p>El primer paso es identificar a <span class="math inline">\(u(x)=x^4\)</span> y su derivada <span class="math inline">\(u&#39;(x)=4x^3\)</span>. Luego aplicamos la regla 12 y tenemos:
+<span class="math display">\[
+f&#39;(x)=u&#39;(x)cos(u(x))=4x^3\cdot cos(x^4)
+\]</span></p>
+<hr />
+<p><em>Ejemplo 7</em></p>
+<p>Obtener la derivada de la función:
+<span class="math display">\[
+f(x)=cos(3x^2+x-1)
+\]</span></p>
+<p>Al igual que en el ejemplo anterior, identificamos a <span class="math inline">\(u(x)=3x^2+x-1\)</span> y su derivada <span class="math inline">\(u&#39;(x)=6x+1\)</span>. Luego aplicamos la regla 12 y tenemos:
+<span class="math display">\[
+f&#39;(x)=u&#39;(x)sen(u(x))=-sen(3x^2+x-1)\cdot (6x+1)
+\]</span></p>
+<hr />
+<p><em>Ejemplo 8</em></p>
+<p>Obtener la derivada de la función:
+<span class="math display">\[
+f(x)=\frac{1}{2}(cos 5x)^2
+\]</span></p>
+<p>Antes de comenzar, conviene notar que esta expresión es del estilo <span class="math inline">\(x^n\)</span> donde <span class="math inline">\(x\)</span> es igual a <span class="math inline">\(cos 5x\)</span>, lo cual es diferente a <span class="math inline">\(cos 5x^2\)</span>. Con esta acotación el primer paso es descomponer a <span class="math inline">\(f(x)\)</span> en <span class="math inline">\(h(x)=x^2\)</span> y <span class="math inline">\(g(x)=cos5x\)</span>; luego obtenemos las derivadas individuales <span class="math inline">\(h&#39;(x)=2x\)</span> y <span class="math inline">\(g&#39;(x)=5\cdot (-sen5x)\)</span>.</p>
+<p>Comprobamos que la composición es correcta y añadimos la constante:</p>
+<p><span class="math display">\[
+f(x)=\frac{1}{2}(h\circ g)(x)=\frac{1}{2}(cos 5x)^2
+\]</span></p>
+<p>Entonces aplicamos la derivada:</p>
+<p><span class="math display">\[
+f&#39;(x)=\frac{1}{2}f^{\prime}(g(x))g^{\prime}(x)=\frac{1}{2}\cdot 2(cos5x)\cdot(5\cdot (-sen5x))
+\]</span></p>
+<p>Simplificamos</p>
+<p><span class="math display">\[
+f&#39;(x)=-5\cdot(cos5x)(sen5x)
+\]</span></p>
+<p>Conviene notar que <span class="math inline">\(cos5x\)</span> viene de <span class="math inline">\(h&#39;(g(x))\)</span> ya que <span class="math inline">\(g(x)=cos5x\)</span>, mientras que <span class="math inline">\(-sen5x\)</span> es justamente la derivada de <span class="math inline">\(g&#39;(x)\)</span>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introducción-al-cálculo.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="integrales.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"includes": {
+"in_header": "header.html"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

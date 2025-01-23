@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>13 12. Integrales | Matemática para Ciencia Forense</title>
+  <meta name="description" content="13 12. Integrales | Matemática para Ciencia Forense" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="13 12. Integrales | Matemática para Ciencia Forense" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="13 12. Integrales | Matemática para Ciencia Forense" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="derivadas.html"/>
+<link rel="next" href="ecuaciones-de-primer-grado.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<p style="font-weight: bold; color: #0B3D62;">Contenido</p>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="notación-científica.html"><a href="notación-científica.html"><i class="fa fa-check"></i><b>2</b> 1. Notación Científica</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="notación-científica.html"><a href="notación-científica.html#representación-numérica"><i class="fa fa-check"></i><b>2.1</b> 1.1 Representación numérica</a></li>
+<li class="chapter" data-level="2.2" data-path="notación-científica.html"><a href="notación-científica.html#operaciones-básicas"><i class="fa fa-check"></i><b>2.2</b> 1.2 Operaciones básicas</a></li>
+<li class="chapter" data-level="2.3" data-path="notación-científica.html"><a href="notación-científica.html#ejemplos"><i class="fa fa-check"></i><b>2.3</b> 1.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="unidades-métricas.html"><a href="unidades-métricas.html"><i class="fa fa-check"></i><b>3</b> 2 Unidades métricas</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="unidades-métricas.html"><a href="unidades-métricas.html#factores-de-conversión"><i class="fa fa-check"></i><b>3.1</b> 2.1. Factores de conversión</a></li>
+<li class="chapter" data-level="3.2" data-path="unidades-métricas.html"><a href="unidades-métricas.html#sistemas-métricos"><i class="fa fa-check"></i><b>3.2</b> 2.2 Sistemas métricos</a></li>
+<li class="chapter" data-level="3.3" data-path="unidades-métricas.html"><a href="unidades-métricas.html#ejemplos-1"><i class="fa fa-check"></i><b>3.3</b> 2.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html"><i class="fa fa-check"></i><b>4</b> 3 Jerarquía de operaciones</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#leyes-de-los-signos"><i class="fa fa-check"></i><b>4.1</b> 3.1 Leyes de los signos</a></li>
+<li class="chapter" data-level="4.2" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#propiedades-de-las-operaciones"><i class="fa fa-check"></i><b>4.2</b> 3.2 Propiedades de las operaciones</a></li>
+<li class="chapter" data-level="4.3" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#orden-de-operaciones"><i class="fa fa-check"></i><b>4.3</b> 3.3 Orden de operaciones</a></li>
+<li class="chapter" data-level="4.4" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#leyes-de-los-exponentes"><i class="fa fa-check"></i><b>4.4</b> 3.4 Leyes de los exponentes</a></li>
+<li class="chapter" data-level="4.5" data-path="jerarquía-de-operaciones.html"><a href="jerarquía-de-operaciones.html#ejemplos-2"><i class="fa fa-check"></i><b>4.5</b> 3.5 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html"><i class="fa fa-check"></i><b>5</b> 4. Vectores y plano cartesiando</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#componentes-de-un-vector"><i class="fa fa-check"></i><b>5.1</b> 4.1 Componentes de un vector</a></li>
+<li class="chapter" data-level="5.2" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#operaciones-básicas-1"><i class="fa fa-check"></i><b>5.2</b> 4.2 Operaciones básicas</a></li>
+<li class="chapter" data-level="5.3" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#coordenadas-polares"><i class="fa fa-check"></i><b>5.3</b> 4.3 Coordenadas polares</a></li>
+<li class="chapter" data-level="5.4" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#radianes-y-grados"><i class="fa fa-check"></i><b>5.4</b> 4.4 Radianes y grados</a></li>
+<li class="chapter" data-level="5.5" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#ángulos-y-el-teorema-de-pitágoras"><i class="fa fa-check"></i><b>5.5</b> 4.5 Ángulos y el Teorema de Pitágoras</a></li>
+<li class="chapter" data-level="5.6" data-path="vectores-y-plano-cartesiando.html"><a href="vectores-y-plano-cartesiando.html#ejemplos-3"><i class="fa fa-check"></i><b>5.6</b> 4.6 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html"><i class="fa fa-check"></i><b>6</b> 5 Logaritmos y exponentes</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#propiedades-de-los-logaritmos"><i class="fa fa-check"></i><b>6.1</b> 5.1 Propiedades de los logaritmos</a></li>
+<li class="chapter" data-level="6.2" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#relación-entre-logaritmos-y-potencias"><i class="fa fa-check"></i><b>6.2</b> 5.2 Relación entre logaritmos y potencias</a></li>
+<li class="chapter" data-level="6.3" data-path="logaritmos-y-exponentes.html"><a href="logaritmos-y-exponentes.html#ejemplos-4"><i class="fa fa-check"></i><b>6.3</b> 5.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="introducción-a-las-funciones.html"><a href="introducción-a-las-funciones.html"><i class="fa fa-check"></i><b>7</b> 6. Introducción a las funciones</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="introducción-a-las-funciones.html"><a href="introducción-a-las-funciones.html#componentes-básicos-de-una-función"><i class="fa fa-check"></i><b>7.1</b> 6.1 Componentes básicos de una función</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="gráficas-de-funciones.html"><a href="gráficas-de-funciones.html"><i class="fa fa-check"></i><b>8</b> 7. Gráficas de funciones</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="gráficas-de-funciones.html"><a href="gráficas-de-funciones.html#interpretación"><i class="fa fa-check"></i><b>8.1</b> 7.1. Interpretación</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="funciones-especiales.html"><a href="funciones-especiales.html"><i class="fa fa-check"></i><b>9</b> 8. Funciones especiales</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="funciones-especiales.html"><a href="funciones-especiales.html#funciones-trigonométricas"><i class="fa fa-check"></i><b>9.1</b> 8.2. Funciones trigonométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="funciones-inversas.html"><a href="funciones-inversas.html"><i class="fa fa-check"></i><b>10</b> 9. Funciones inversas</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="funciones-inversas.html"><a href="funciones-inversas.html#funciones-lineales"><i class="fa fa-check"></i><b>10.1</b> 9.1. Funciones lineales</a></li>
+<li class="chapter" data-level="10.2" data-path="funciones-inversas.html"><a href="funciones-inversas.html#exponentes-y-logaritmos"><i class="fa fa-check"></i><b>10.2</b> 9.2. Exponentes y logaritmos</a></li>
+<li class="chapter" data-level="10.3" data-path="funciones-inversas.html"><a href="funciones-inversas.html#ejemplos-5"><i class="fa fa-check"></i><b>10.3</b> 9.3 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="introducción-al-cálculo.html"><a href="introducción-al-cálculo.html"><i class="fa fa-check"></i><b>11</b> 10. Introducción al cálculo</a></li>
+<li class="chapter" data-level="12" data-path="derivadas.html"><a href="derivadas.html"><i class="fa fa-check"></i><b>12</b> 11. Derivadas</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="derivadas.html"><a href="derivadas.html#ejemplos-6"><i class="fa fa-check"></i><b>12.1</b> 11.1 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="integrales.html"><a href="integrales.html"><i class="fa fa-check"></i><b>13</b> 12. Integrales</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="integrales.html"><a href="integrales.html#ejemplos-7"><i class="fa fa-check"></i><b>13.1</b> 12.1 Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html"><i class="fa fa-check"></i><b>14</b> 13. Ecuaciones de primer grado</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html#ejemplos-8"><i class="fa fa-check"></i><b>14.1</b> 13.1 Ejemplos</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Matemática para Ciencia Forense</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="integrales" class="section level1 hasAnchor" number="13">
+<h1><span class="header-section-number">13</span> 12. Integrales<a href="integrales.html#integrales" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><br></p>
+<p>El cálculo del área de una región es un problema que ha ocupado el pensamiento humano a lo largo del tiempo, hay registro que los egipcios ya contaban con algunas reglas para el cálculo de las áreas y volúmenes. Estas reglas pasaron a otras culturas y fueron los griegos quienes le dieron un gran impulso con el desarrollo de métodos que aún siguen vigentes hoy en día, basta con mencionar al famoso teorema de Pitágoras. Sin embargo, fue Riemann quien desarrolló la noción de lo que conocemos como integral y condensa la idea de obtener el área de una región en particular y se suma a lo que unos siglos antes habían desarrollado Newton y Leibniz.</p>
+<p>Un aspecto que se debe de tener presente es que las integrales y derivadas son operaciones inversas, lo que significa que podemos llegar de una a otra. Esto es equivalente a multiplicar o dividir una fracción por el mismo número, por ejemplo, si tenemos <span class="math inline">\(\frac{2}{4}\)</span> y multiplicamos al numerador y denominador por 3, entonces la fracción se transforma en <span class="math inline">\(\frac{6}{12}\)</span>. Si ahora tomamos esta fracción y la dividimos por 3 podemos llegar a la fracción original que era <span class="math inline">\(\frac{2}{4}\)</span> ya que la multiplicación y la división son operaciones inversas.</p>
+<p>Esto mismo sucede con las integrales y derivadas: si tenemos una función, la integramos y posteriormente la derivamos entonces tendremos la función original. Al igual que en el caso de las derivadas, también existen reglas que ayudan encontrar las integrales, sin embargo, gran parte de la lógica que se utiliza es similar. Cuando nos enfrentamos a una integral, resulta bastante útil tratar de componerla en funciones más sencillas que faciliten su cálculo.</p>
+<p><br></p>
+<p><strong>Reglas de integración</strong></p>
+<p>A continuación se presentan las reglas de integración más comunes.</p>
+<ol style="list-style-type: decimal">
+<li><p>Si <span class="math inline">\(k\)</span> es una constante, entonces para cualquier función <span class="math inline">\(f(x)\)</span> se tiene que <span class="math inline">\(\int kdx=k\cdotp x+c\)</span></p></li>
+<li><p>Si <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son dos constantes, entonces para cualesquiera funciones <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> se tiene que <span class="math inline">\(\int \left( a\cdot f(x) + b \cdot g(x) \right)\ dx = a\int f(x)\ dx + b\int g(x)\ dx\)</span></p></li>
+<li><p>En el caso de la constante igual a <span class="math inline">\(0\)</span> sucede que <span class="math inline">\(\int 0dx=c\)</span></p></li>
+<li><p>Para cualquier número racional <span class="math inline">\(n\)</span>, diferente de <span class="math inline">\(-1\)</span>, tenemos que <span class="math inline">\(\int x^ndx=\frac{ x^{x+1} }{n+1}+c\)</span>. Esto incluye a las raíces cuyos valores exponenciales suelen estar de la forma <span class="math inline">\(\frac{1}{q}\)</span> donde <span class="math inline">\(q\)</span> es un número entero.</p>
+<p>4.1 Para cualquier número racional <span class="math inline">\(n\not = 1\)</span>, tenemos que <span class="math inline">\(\int u^n\cdotp u&#39;du=\frac{ u^{n+1} }{n+1}+c\)</span></p></li>
+<li><p>El valor de la integral <span class="math inline">\(\int \frac{1}{x}\ dx\)</span> es <span class="math inline">\(\ln(x) + C\)</span></p>
+<p>5.1 Cuando se tiene una fracción en donde la función que está en el numerador es la derivada del denominador, entonces <span class="math inline">\(\int \frac{u&#39;}{u}dx=\ln u+c\)</span></p></li>
+<li><p>Para cualquier número real <span class="math inline">\(a\)</span> elevado a un exponente <span class="math inline">\(n\)</span> se tiene que <span class="math inline">\(\int a^u\cdot u&#39;dx=\frac{a^u}{\ln\thinspace a}+c\)</span></p>
+<p>6.1 El caso particular es cuando la base es igual a <span class="math inline">\(e\)</span>, entonces se tiene <span class="math inline">\(\int e^u\cdot u&#39;dx=e^u+c\)</span></p></li>
+</ol>
+<p><br></p>
+<div id="ejemplos-7" class="section level2 hasAnchor" number="13.1">
+<h2><span class="header-section-number">13.1</span> 12.1 Ejemplos<a href="integrales.html#ejemplos-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="80%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><img src="www/buscador.png" alt="Imagen" style="width: 90%;"></td>
+<td>En muchos de los Ejemplos de integración es necesario descomponer la función original en expresiones más sencillas de manejar. Usualmente, se trata de encontrar a una función <span class="math inline">\(u(x)\)</span> cuya derivada sea inmediata para que durante el proceso de integración se simplifica en los términos, sin embargo, ¿cómo saber quiénes <span class="math inline">\(u(x)\)</span>? Una técnica que que es de gran utilidad es utilizar la nomenclatura <strong>ILATE</strong> qué es un acrónimo en donde cada letra representa a un grupo particular de funciones. En este sentido se tiene que: <strong>I</strong> inversa, <strong>L</strong> logarítmica, <strong>A</strong> algebraica, <strong>T</strong> trigonométrica, <strong>E</strong> exponencial.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><em>Ejemplo 0</em></p>
+<p><span class="math display">\[
+\int x^2\cdot lnx\thinspace dx
+\]</span></p>
+<p>En esta integral se tienen dos expresiones <span class="math inline">\(x^2\)</span> y <span class="math inline">\(lnx\)</span>, la primera de ellas es <em>a</em>lgebraica, mientras que la segunda es <em>l</em>ogaritmica. De acuerdo con el orden anterior, las funciónes <em>l</em>ogarítmicas aparecen primero y por lo tanto se tiene que <span class="math inline">\(u(x)=lnx\)</span>.</p>
+<p>Al hacer esta elección, entonces <span class="math inline">\(dv\)</span> es <span class="math inline">\(x^2\)</span> ya que las funciones <em>a</em>lgebraicas están despúes de las <em>l</em>ogaritmicas.</p>
+<p><br></p>
+<hr />
+<p><em>Ejemplo 1</em></p>
+<p><span class="math display">\[
+\int x^{\frac{2}{3}} dx
+\]</span></p>
+<p>Para resolver esta integral conviene notar qué tenemos una función elevada a un exponencial, más allá de su forma que en este caso es una fracción. Entonces podemos aplicar la regla número 4 en donde <span class="math inline">\(n=\frac{2}{3}\)</span> con lo cual tenemos:
+<span class="math display">\[
+\int x^{\frac{2}{3}}dx =\frac{x^{\frac{2}{3}+1}}{{\frac{2}{3}+1}}+C
+\]</span></p>
+<p>Con este paso la integral ya está resuelta, sin embargo, conviene hacer un poco de álgebra para simplificar los términos. al hacerlo, tenemos:
+<span class="math display">\[
+\int x^{\frac{2}{3}}dx =\frac{x^{\frac{2}{3}+1}}{{\frac{2}{3}+1}}+C ={\frac{x^\frac{5}{3}}{\frac{5}{3}}}+ C=\frac {3^3\sqrt{x^5}}{5} + C
+\]</span></p>
+<hr />
+<p><em>Ejemplo 2</em></p>
+<p><span class="math display">\[
+\int (x^4-6x^2-2x+4)dx
+\]</span></p>
+<p>La primera situación qué debemos notar es que se trata de un polinomio con varios términos y es más sencillo integrar cada una de sus partes. Así que aplicamos la regla número 2:</p>
+<p><span class="math display">\[
+\int x^4dx-\int 6x^2dx-\int 2xdx+\int 4dx
+\]</span></p>
+<p>Esto es igual a:</p>
+<p><span class="math display">\[
+=\frac{x^5}{5}-\frac{6x^3}{3}-\frac{2x^2}{2}+4x+c
+\]</span></p>
+<p>Lo cual podemos simplificar un poco más y tenemos:
+<span class="math display">\[
+=\frac{x^5}{5}-2x^3-x^2+4x+c
+\]</span></p>
+<hr />
+<p><em>Ejemplo 3</em></p>
+<p><span class="math display">\[
+\int (\frac {x^2+\sqrt[3]{x^2}}{\sqrt{x}})dx
+\]</span></p>
+<p>Antes de iniciar, conviene hacer notar que en esta ecuación tenemos términos semejantes y por lo tanto podemos llevar a cabo una simplificación.</p>
+<p><span class="math display">\[
+\int \left(\frac {x^2+\sqrt[3]{x^2}}{\sqrt{x}}\right)dx=\int \left(\frac{x^2}{\sqrt{x}}+\frac{\sqrt[3]{x^2}}{\sqrt{x}}\right)dx
+\]</span></p>
+<p>Ahora aplicamos las leyes de los exponentes para quedarnos con un solo término y simplificar la expresión aún más.
+<span class="math display">\[
+\int (x^\frac{3}{2}+x^\frac{1}{6})dx
+\]</span></p>
+<p>Esta versión simplificada es más fácil de resolver, ya que basta con aplicar la regla número 2 y la regla número 3:
+<span class="math display">\[
+\int (x^\frac{3}{2}+x^\frac{1}{6})dx=\frac{x^\frac{5}{2}}{\frac{5}{2}}+\frac{x^\frac{7}{6}}{\frac{7}{6}}+C
+\]</span></p>
+<p>Si podemos simplificar la expresión más y tenemos:
+<span class="math display">\[
+=\frac{x^\frac{5}{2}}{\frac{5}{2}}+\frac{x^\frac{7}{6}}{\frac{7}{6}}+C=\frac {2\sqrt{x^5}}{5}+ \frac {6\sqrt[6]{x^7}}{7}+C=\frac {2x^2\sqrt{x}}{5}+ \frac {6x\sqrt[6]{x}}{7}+C
+\]</span></p>
+<p><strong>Integración por partes</strong></p>
+<p>El método de integración por partes permite calcular la integral de un producto de dos funciones aplicando la fórmula:</p>
+<p><span class="math display">\[
+\int u\cdot v&#39;dx= u\cdot \thinspace v -\int u&#39;\cdot v\thinspace dx
+\]</span></p>
+<hr />
+<p><em>Ejemplo 4</em></p>
+<p><span class="math display">\[ \int x^3e^{x}\thinspace dx\]</span></p>
+<p>De acuerdo con la regla anterior, para resolver esta integral el primer paso es determinar quien es <span class="math inline">\(u(x)\)</span> y quien es <span class="math inline">\(v&#39;(x)\)</span>. Debemos de tener presente que nuestra elección tendrá implicaciones ya que seguirán caminos opuestos. Si suponemos que <span class="math inline">\(u(x)=x^3\)</span>, entonces <span class="math inline">\(u’(x) =3x^2\)</span>, caso contrario, si <span class="math inline">\(v&#39;=e^x\)</span>, entonces debemos encontrar una función cuya derivada sea <span class="math inline">\(e^x\)</span>.</p>
+<p>La recomendación es considerar <span class="math inline">\(v&#39;=e^x\)</span> y así tenemos que:</p>
+<p><span class="math display">\[u=x^3\thinspace\longrightarrow\thinspace    u&#39;=3x^2\]</span>
+<span class="math display">\[v&#39;=e^x\thinspace\longrightarrow\thinspace v=e^x\]</span></p>
+<p>Entonces, usando el método de integración por partes tenemos que:</p>
+<p><span class="math display">\[\int x^3e^{x}\thinspace dx = x^3e^x - 3\int x^2 e^{x}\thinspace dx\]</span></p>
+<p>Ahora, regresamos a una situación similar a la integral del comienzo. De forma análoga, elegimos <span class="math inline">\(u(x)=x^2\)</span> y <span class="math inline">\(v&#39;(x) = e^x\)</span>. Así tenemos que:</p>
+<p><span class="math display">\[u=x^2\thinspace\longrightarrow\thinspace    u&#39;=2x\]</span>
+<span class="math display">\[v&#39;=e^x\thinspace\longrightarrow\thinspace v=e^x\]</span></p>
+<p>Sustituyendo esto en la integral que intentamos resolver al inicio, tenemos que:</p>
+<p><span class="math display">\[\int x^3e^{x}\thinspace dx = x^3e^x - 3\left(x^2e^x - 2\int x e^{x}\thinspace dx\right)\]</span></p>
+<p>De nuevo terminamos con una integral que debemos resolver por integración por partes. Elegimos <span class="math inline">\(u(x)=x\)</span> y <span class="math inline">\(v&#39;(x)=e^x\)</span>. Entonces:</p>
+<p><span class="math display">\[u=x\thinspace\longrightarrow\thinspace    u&#39;=1\]</span>
+<span class="math display">\[v&#39;=e^x\thinspace\longrightarrow\thinspace v=e^x\]</span></p>
+<p>Sustituyendo esto en la integral, se tiene que:</p>
+<p><span class="math display">\[\int x^3e^{x}\thinspace dx = x^3e^x - 3\left(x^2e^x - 2\left(xe^x - \int e^{x}\thinspace dx\right)\right)\]</span></p>
+<p>De la regla número 6.1 conocemos el valor de la única integral con la que terminamos. Sólo nos queda resolver las multiplicaciones:</p>
+<p><span class="math display">\[ = x^3e^x - 3\left(x^2e^x - 2\left(xe^x - e^x\right)\right)\]</span>
+<span class="math display">\[ = x^3e^x - 3x^2e^x + 6xe^x - 6e^x\]</span>
+<span class="math display">\[ \int x^3e^{x}\thinspace dx = e^x\left(x^3 - 3x^2 + 6x - 6\right) +  C\]</span></p>
+<hr />
+<p><em>Ejemplo 5</em></p>
+<p><span class="math display">\[
+\int x \cdot {\sqrt{x+1}}dx
+\]</span>
+Antes de iniciar con el proceso, conviene cambiar la forma del segundo término y transformar la raíz cuadrada en exponente <span class="math inline">\(\sqrt{x+1}=(x+1)^{\frac{1}{2}}\)</span>. El siguiente paso es identificar cuál de los dos términos va a fungir como <span class="math inline">\(u\)</span> y cuál será <span class="math inline">\(dv\)</span>, sin embargo, en ambos casos se trata de una función algebraica. Una forma de decidir es preguntarse ¿cuál es más fácil de derivar? Y la respuesta es <span class="math inline">\(x,\)</span> con lo cual tenemos:<br />
+<span class="math display">\[
+u=x\thinspace\longrightarrow\thinspace du=1
+\]</span></p>
+<p><span class="math display">\[
+dv= (x+1)^{\frac{1}{2}}dx\thinspace\longrightarrow\thinspace v=\frac{2}{3}\cdot (x+1)^{\frac{3}{2}}
+\]</span></p>
+<p>Para estar seguros de que este último término es correcto, a continuación se muestra cómo llegamos de <span class="math inline">\(dv\)</span> a <span class="math inline">\(v\)</span> vía integración (cabe hacer notar que esta integral es sólo un paso intermedio para resolver a la integral principal), a saber:</p>
+<p><span class="math display">\[
+v= \int (x+1)^{\frac{1}{2}}dx=
+\]</span>
+<span class="math display">\[
+={\frac{2}{3}}\cdot\int{\frac{3}{2}}\cdot(x+1)^{\frac{3}{2}}dx=
+\]</span>
+<span class="math display">\[
+={\frac{2}{3}}\cdot(x+1)^{\frac{3}{2}}
+\]</span>
+Una vez que ya conocemos a <span class="math inline">\(u\)</span>, <span class="math inline">\(du\)</span>, así como <span class="math inline">\(v\)</span> y <span class="math inline">\(dv\)</span> podemos sustituir estos valores en la fórmula y obtenemos lo siguiente:</p>
+<p><span class="math display">\[
+\int x \cdot \sqrt{x+1}dx
+\]</span>
+<span class="math display">\[
+=x\cdot \frac{2}{3}\cdot(x+1)^{\frac{3}{2}}-\int \frac{2}{3} \cdot(x+1)^{\frac{3}{2}}dx
+\]</span>
+<span class="math display">\[
+=x\cdot \frac{2}{3}\cdot(x+1)^{\frac{3}{2}}-\frac{2}{3}\int(x+1)^{\frac{3}{2}}dx
+\]</span>
+<span class="math display">\[
+=x\cdot \frac{2}{3}\cdot(x+1)^{\frac{3}{2}}-\frac{2}{3}\cdot\frac{2}{5}\cdot(x+1)^{\frac{5}{2}}
+\]</span>
+<span class="math display">\[
+=\frac{2}{3}x(x+1)^{\frac{3}{2}}-\frac{4}{15}(x+1)^\frac{5}{2}+c
+\]</span></p>
+<hr />
+<p><em>Ejemplo 6</em></p>
+<p><span class="math display">\[
+\int x \cdot 3^x dx
+\]</span>
+El primer paso es identificar que tenemos una función algebraica <span class="math inline">\(x\)</span> y una función exponencial <span class="math inline">\(3^x\)</span>, por lo que siguiendo la técnica de usar la memotecnia de:
+Inversa Logarítmica Algebraica Trigonométrica Exponencial.
+Así, podemos observar que la función algebraica va primero por tanto será aquí en seleccionemos para representar a <span class="math inline">\(u\)</span>, con lo cual <span class="math inline">\(du=1\)</span>. Ahora bien, si <span class="math inline">\(dv=3^x\)</span> entonces <span class="math inline">\(v=\frac{3^x}{\ln (3)}\)</span>.</p>
+<p>De esta forma, ahora podemos sustituir en la formula original y tenemos:</p>
+<p><span class="math display">\[
+\int x \cdot 3^x dx=
+\]</span>
+<span class="math display">\[
+=x\cdot \frac{3^x}{\ln (3)}-\int\frac{3^x}{\ln (3)}dx=
+\]</span>
+<span class="math display">\[
+=x\cdot \frac{3^x}{\ln (3)}-\frac{1}{\ln (3)}\int{3^x}dx=
+\]</span>
+<span class="math display">\[
+=x\cdot \frac{3^x}{\ln (3)}-\frac{1}{\ln (3)}\cdot\frac{3^x}{\ln (3)}=
+\]</span>
+<span class="math display">\[
+=\frac{3^x}{\ln (3)}\cdot\left(x-\frac{1}{\ln (3)}\right)+c
+\]</span></p>
+<hr />
+<p><em>Ejemplo 7</em></p>
+<p><span class="math display">\[
+\int 2x (x^2-5)^5 dx=
+\]</span>
+El objetivo de las sustituciones es simplificar la expresión original para tener una versión más fácil de integrar. En este caso podemos considerar <span class="math inline">\(u=x^2-5\)</span> y <span class="math inline">\(du=2x\)</span>, así la función anterior la podemos reescribir como:</p>
+<p><span class="math display">\[
+\int u^5du
+\]</span>
+Esta expresión resulta mucho más fácil de integrar que la anterior, ya que podemos aplicar la regla<br />
+<span class="math display">\[
+\int u^5du=\frac{u^{n+1}}{n+1} \enspace\textrm{con} \enspace n=5
+\]</span>
+Así, el resultado es <span class="math inline">\(\frac{u^6}{6}\)</span> . Sin embargo, para finalizar, deshacemos la sustitución inicial en donde consideramos <span class="math inline">\(u=x^2-5\)</span> y tenemos:
+<span class="math display">\[
+\int 2x (x^2-5)^5 dx= \frac{(x^2-5)^6}{6} + c
+\]</span></p>
+<hr />
+<p><em>Ejemplo 8</em></p>
+<p><span class="math display">\[
+\int (x^2-5)^5\cdot 5x\thinspace dx
+\]</span>
+Para resolver esta expresión vamos a utilizar la misma técnica del Ejemplo anterior y sustituir la función original por una versión que sea más fácil de resolver. En este caso podemos considerar <span class="math inline">\(u=x^2-5\)</span>, con lo que su derivada sería <span class="math inline">\(du=2x\)</span>, sin embargo, podemos observar que en la función tenemos <span class="math inline">\(5x\)</span> lo cual no correspondería a <span class="math inline">\(du\)</span>. Por lo tanto, hacemos un ajuste y agregamos una constante <span class="math inline">\(5/2\)</span> a <span class="math inline">\(du\)</span> con lo cual tenemos <span class="math inline">\(du=2x\cdot\frac{5}{2}\)</span>, así al sustituir la propuesta de sustitución ya tenemos <span class="math inline">\(5x\)</span>.</p>
+<p>De esta forma, sustituimos los valores y tenemos:</p>
+<p><span class="math display">\[
+\int (x^2-5)^5\cdot 5x\thinspace dx=\frac{5}{2}\int u^5du
+\]</span></p>
+<p>Aplicamos la regla de la potencia <span class="math inline">\(\int u^ndu =\frac{u^{n+1}}{n+1}\)</span> con <span class="math inline">\(n=5\)</span> y tenemos:</p>
+<p><span class="math display">\[
+\frac{u^6}{6}
+\]</span></p>
+<p>Para finalizar, deshacemos la sustitución inicial en donde consideramos <span class="math inline">\(u=x^2-5\)</span> y tenemos:</p>
+<p><span class="math display">\[
+\int (x^2-5)^5\cdot 5x\thinspace dx = \frac {5(x^2-5)^6}{12} + c
+\]</span></p>
+<hr />
+<p><em>Ejemplo 9</em></p>
+<p><span class="math display">\[
+\int \frac{\ln(x)}{x^3}\thinspace dx
+\]</span></p>
+<p>El primer paso es notar que se trata de una fracción, pero podemos pasar el denominador <span class="math inline">\(x^3\)</span> para tener una <em>multiplicación</em> de funciones. Al hacerlo, la función se transforma a:</p>
+<p><span class="math display">\[
+\int \ln(x)\cdot x^{-3}\thinspace dx
+\]</span></p>
+<p>Aquí, el exponente cambia de signo a negativo al momento de subir el denominador al numerador. El siguiente paso es identificar el tipo de funciones que tenemos para elegir a <span class="math inline">\(u\)</span>. En este caso, conviene considerar a la función <span class="math inline">\(\ln(x)\)</span> como <span class="math inline">\(u\)</span> ya que su derivada es <em>inmediata</em>. Además de que si se considera la nomenclatura “ILATE” aparece antes que la función algebraica.</p>
+<p>Con esto en mente:</p>
+<p><span class="math display">\[u=\ln(x)\thinspace\longrightarrow\thinspace    u&#39;=\frac{1}{x}\]</span>
+<span class="math display">\[v&#39;=x^{-3}\thinspace\longrightarrow\thinspace v=-\frac{1}{2}x^{-2}\]</span></p>
+<p>La función <span class="math inline">\(v\)</span> se obtuvo de la siguiente manera:</p>
+<p>Si se considera que tenemos la derivada <span class="math inline">\(v&#39;(x)\)</span> entonces la operación contraria es la integral, por lo tanto debemos integrar <span class="math inline">\(\int x^{-3}\thinspace dx\)</span> para lo cual basta con aplicar la fómula <span class="math inline">\(\int x^ndx=\frac{ x^{x+1} }{n+1}+c\)</span> considerando n=-3.</p>
+<p>Ahora bien, el siguiente paso es usar la integración por partes: <span class="math inline">\(\int u\cdot v&#39;dx= u\cdot \thinspace v -\int u&#39;\cdot v\thinspace dx\)</span> con los valores de <span class="math inline">\(u\)</span> y <span class="math inline">\(v\)</span>, a saber:</p>
+<p><span class="math display">\[
+\int \ln(x)\cdot x^{-3}\thinspace dx = u\cdot \thinspace v -\int u&#39;\cdot v\thinspace dx
+\]</span></p>
+<p><span class="math display">\[
+= \ln(x)\cdot \left(-\frac{1}{2}x^{-2}\right)-\int \frac{1}{x}\cdot \left(-\frac{1}{2}x^{-2}\right)\thinspace dx
+\]</span></p>
+<p>Estos son los valores tal cual los obtuvimos en los pasos previos, sin embargo, podemos simplificar los términos de la siguiente forma:
+<span class="math display">\[
+= -\ln(x)\cdot \left(\frac{1}{2x^{2}}\right)+\int \frac{1}{x}\cdot \left(\frac{1}{2x^{2}}\right)\thinspace dx
+\]</span></p>
+<p><span class="math display">\[
+= -\frac{\ln(x)}{2x^{2}}+\int \frac{1}{2x^{3}}\thinspace dx
+\]</span>
+<span class="math display">\[
+= -\frac{\ln(x)}{2x^{2}}+\frac{1}{2}\int \frac{1}{x^{3}}\thinspace dx
+\]</span></p>
+<p>Aquí, el primer término ya está resuelto, por lo que basta con encontrar el resultado de la función <span class="math inline">\(\int \frac{1}{x^{3}}\thinspace dx\)</span>, la cual tiene la forma <span class="math inline">\(\int u^ndu =\frac{u^{n+1}}{n+1}\)</span>, por lo que podemos resolver la integral al considerar <span class="math inline">\(n=-3\)</span>, es decir, <span class="math inline">\(\int \frac{1}{x^{3}}\thinspace dx=\int x^{-3}\thinspace dx\)</span> es igual a <span class="math inline">\(=\frac{x^{-3+1}}{-3+1}=\frac{x^{-2}}{-2}=-\frac{x^{-2}}{2}=-\frac{1}{2x^{2}}\)</span></p>
+<p>Así, tenemos:</p>
+<p><span class="math display">\[
+= -\frac{\ln(x)}{2x^{2}}+\frac{1}{2}\cdot\left(-\frac{1}{2x^2}\right)
+\]</span></p>
+<p><span class="math display">\[
+\int \frac{\ln(x)}{x^3}\thinspace dx = -\frac{\ln(x)}{2x^{2}}-\frac{1}{4x^2} + C
+\]</span></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="derivadas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ecuaciones-de-primer-grado.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"includes": {
+"in_header": "header.html"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
